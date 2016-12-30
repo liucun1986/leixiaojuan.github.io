@@ -1,0 +1,61 @@
+<div class="first-widget parallax" id="portfolio">
+	<div class="parallax-overlay">
+		<div class="container pageTitle">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h2 class="page-title">作品分享</h2>
+				</div> 
+				<div class="col-md-6 col-sm-6 text-right">
+					<span class="page-location">首页 / 作品分享</span>
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+</div> 
+
+<div class="container">	
+	<div class="row">
+		<div class="col-md-12">
+			<ul id="filters" class="mixitup-controls">
+				<li class="filter" data-filter="all">所有</li>
+                <li class="filter" ng-repeat="item in typeList" data-filter="{{item.type}}" ng-bind="item.name"></li>
+			</ul>
+		</div> 
+	</div> 
+</div> 
+
+<div class="container">
+	<div class="row">
+		<div class="portfolio-holder" id="Grid">
+			<div class="portfolio-post col-sm-6 col-md-4 mix " ng-repeat="item in workList" ng-class="item.tagFilter">
+				<div class="thumb-post">
+					<div class="overlay">
+                        <div class="overlay-inner">
+                            <div class="portfolio-infos">
+                                <span class="meta-category" ng-bind="item.tag"></span>
+                                <h3 class="portfolio-title"><a href="#/WorksDetail/Index" ng-bind="item.title"></a></h3>
+                            </div>
+                            <div class="portfolio-expand">
+                                <a class="fancybox" href="{{item.imgUrl[0].url}}" title="{{item.title}}">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="{{item.imgUrl[0].url}}" alt="{{item.title}}" title="{{item.title}}">
+				</div>
+			</div>
+			
+		</div> 
+	</div> 
+</div> 
+<!-- 分页 -->
+<page ng-if="workList.length>0"  page-count="pageCount" page-index="page.pageIndex" page-size="page.pageSize" total-count="totalCount"></page>
+
+<script type="text/javascript">
+	$(function () {
+	  setTimeout(function() {
+	    $("body").append("<script src='assets/js/min/medigo-custom.min.js' type='text/javascript'><\/script>")
+	  }, 200);
+	});
+</script>

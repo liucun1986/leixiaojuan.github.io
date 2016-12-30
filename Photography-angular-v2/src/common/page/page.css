@@ -1,0 +1,12 @@
+page div.oagrid_pagenav {
+  margin: 10px 0;
+}
+
+page a.page-active {
+  border: #ccc 1px solid;
+  padding: 2px 5px;
+  margin: 0px 3px;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+}

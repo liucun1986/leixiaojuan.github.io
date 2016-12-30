@@ -1,0 +1,10 @@
+<div class='oagrid_pagenav'>
+  <span class='oagrid_pagenav_recordcnt'>共<strong>{{vm.totalCount}}</strong>行</span>
+  <a  ng-click="vm.getPageList(vm.pageIndex-1)" ng-class="[vm.pageIndex==1?'page-active':'']" ng-click="vm.getPageList(pageIndex-1)"
+     class="oagrid_pagenav_pagelink">&lt;</a>
+
+  <a ng-repeat="page in vm.pageList" ng-click="vm.getPageList(page)" ng-class="[page===vm.pageIndex?'page-active':'']" class="oagrid_pagenav_pagelink">{{page}}</a>
+
+  <a  ng-click="vm.getPageList(vm.pageIndex+1)" ng-class="[vm.pageIndex==vm.totalPace||vm.totalPace===0?'page-active':'']" class="oagrid_pagenav_pagelink">&gt;</a>
+  每页显示<input ng-model="vm.pageSize" ng-change="vm.sizeChange()" class="oagrid_pagenav_pagesize" number/>行
+</div>

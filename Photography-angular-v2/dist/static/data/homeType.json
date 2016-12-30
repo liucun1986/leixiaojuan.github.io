@@ -1,0 +1,40 @@
+{
+	"data":[
+		{
+			"id": 1,
+			"icon": "fa-umbrella",
+			"name": "企业模板",
+			"content": "灵活、强大的管理平台；完善的产品展示平台"
+		},
+		{
+			"id": 2,
+			"icon": "fa-mobile-phone",
+			"name": "摄影模板",
+			"content": "赏心悦目；个性飞扬；惟妙惟肖"
+		},
+		{
+			"id": 3,
+			"icon": "fa-pencil-square-o",
+			"name": "电子商务",
+			"content": "信息化；虚拟性；全球性；社会性"
+		},
+		{
+			"id": 4,
+			"icon": "fa-code",
+			"name": "HTML5模板",
+			"content": "语义特性；本地存储特性；设备兼容特性"
+		},
+		{
+			"id": 5,
+			"icon": "fa-eye-slash",
+			"name": "营销网站",
+			"content": "精准定位；形象要好；良好体验；推广面广"
+		},
+		{
+			"id": 6,
+			"icon": "fa-suitcase",
+			"name": "教育网站",
+			"content": "多媒体呈现、交互性、开放性、共享性、灵活性"
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "departName": "A3项目组(14381)",
+            "formalPreparation":{
+                "depCurrent": 290,
+                "depOver": 24,
+                "depChange": 4,
+                "depEmpty": 0,
+                "currentUserCount":318,
+                "currentUserPercent":"108%"
+            },
+            "externalPreparation":{
+                "depCurrent": 2,
+                "depEmpty": 1,
+                "currentUserCount":3,
+                "currentUserPercent":"67%"
+            }
+        },
+        {
+            "id": 2,
+            "departName": "ACG产品组(10429)",
+            "formalPreparation":{
+                "depCurrent": 150,
+                "depEmpty": 10,
+                "depOver": 3,
+                "depChange": 1,
+                "currentUserCount":164,
+                "currentUserPercent":"99%"
+            },
+            "externalPreparation":{
+                "depCurrent": 5,
+                "depEmpty": 2,
+                "currentUserCount":7,
+                "currentUserPercent":"80%"
+            }
+        },
+        {
+            "id": 3,
+            "departName": "ACT产品中心(10442)",
+            "formalPreparation":{
+                "depCurrent": 10,
+                "depOver": 2,
+                "depEmpty": 10,
+                "currentUserCount":22,
+                "currentUserPercent":"108%"
+            },
+            "externalPreparation":{
+                "depCurrent": 2,
+                "depEmpty": 10,
+                "depOver": 24,
+                "currentUserCount":36,
+                "currentUserPercent":"67%"
+            }
+        }
+    ],
+    "Result":true
+}

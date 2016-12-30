@@ -1,0 +1,12 @@
+<div class="rightHead">
+  <ul class="clearfix">
+    <li>
+      <a>Demo</a>
+      <span>&gt;</span>
+    </li>
+    <li ng-repeat="tab in vm.tabs">
+      <a ng-class="{'crumbs-active':tab.active}" ui-sref="{{tab.link}}">{{ tab.name }}</a>
+      <span>&gt;</span>
+    </li>
+  </ul>
+</div>

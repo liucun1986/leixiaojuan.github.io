@@ -1,0 +1,90 @@
+
+<div class="first-widget parallax" id="portfolioId">
+	<div class="parallax-overlay">
+		<div class="container pageTitle">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h2 class="page-title">作品分享</h2>
+				</div> 
+				<div class="col-md-6 col-sm-6 text-right">
+					<span class="page-location">首页 / 作品分享 / 详情</span>
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+</div> 
+
+<div class="container">	
+	<div class="row project-single">
+		<div class="col-md-8">
+			<div class="flexslider">
+				<ul class="slides">
+					<li ng-repeat="item in vm.work.imgUrl">
+						<img src="{{item.url}}" alt="{{item.name}}">
+					</li>
+				</ul>
+			</div>
+		</div> 
+		<div class="col-md-4">
+			<div class="project-info">
+				<span class="subtitle">{{vm.work.tag}}</span>
+				<h3 class="project-title">{{vm.work.title}}</h3>
+				<p class="description">{{vm.work.content}}</p>
+				<ul class="meta-post">
+					<li><span>Date:</span>{{vm.work.date}}</li>
+					<li><span>URL:</span><a href="{{work.publishUrl}}">{{vm.work.publishUrlName}}</a></li>
+					<li><span>我的github:</span><a href="https://leixiaojuan.github.io/jl/index.html">https://leixiaojuan.github.io/</a></li>
+				</ul>
+			</div> 
+		</div> 
+	</div> 
+</div>
+
+<div class="static-info-project">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<p class="larger-text">有什么问题，随时咨询，一起学习并且分享经验咯！</p>
+				<p class="larger-text">扫描页面底部的QQ和微信的二维码，或者<a href="#/Message/Index">联系我</a>给我留言</p>
+			</div> 
+		</div> 
+	</div> 
+</div> 
+
+<div class="related-projects">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-header">
+					<h2 class="section-title">精选作品</h2>
+					<p class="section-desc">这些是一些你可能感兴趣的项目.</p>
+				</div> 
+			</div> 
+		</div> 
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="portfolio-holder">
+				<div class="portfolio-post col-sm-6 col-md-4" ng-repeat="item in vm.workList">
+					<div class="thumb-post">
+						<div class="overlay">
+                        	<div class="overlay-inner">
+	                            <div class="portfolio-infos">
+	                                <span class="meta-category">{{item.tag}}</span>
+	                                <h3 class="portfolio-title"><a href="#/WorksDetail/Index">{{item.title}}</a></h3>
+	                            </div>
+	                            <div class="portfolio-expand">
+	                                <a class="fancybox" href="{{item.imgUrl[0].url}}" title="{{item.title}}">
+	                                    <i class="fa fa-expand"></i>
+	                                </a>
+	                            </div>
+                        	</div>
+                    	</div>
+                    	<img src="{{item.imgUrl[0].url}}" alt="{{item.title}}">
+					</div>
+				</div>
+			</div> 
+		</div> 
+	</div> 
+</div> 

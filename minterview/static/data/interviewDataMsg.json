@@ -1,0 +1,233 @@
+{
+	"interviewMsg": [
+				{
+					
+					"name": "叶峰",
+					"sex":"男",
+					"tel": "15001005800",
+					"email": "548568@qq.com",
+					"interviewPosterMsg":[
+			            {"value":"人力资源平台"},
+			            {"value":"TEG-03-高级开发工程师"},
+			            {"value":"T3"},
+			            {"value":"后台开发"},
+			            {"value":"新增需求"}
+					 ],
+					"interviewStartPersonMsg":[
+                        {"value":"ethanhua(华海风)"},
+   			            {"value":"2016-09-10 15:33:23"}             
+                     ],
+					"interviewArrange":[
+							{
+								"interviewArrangeMain":
+										[
+							                	{"name":"面试官",
+							                	"value":"ethanhua(华海风);rodickwu(吴倚)"},
+									            {"name":"面试类型","value":"群面(依次面)"},
+									            {"name":"面试地点","value":"腾讯大厦35楼3506"},
+									            {"name":"面试时间","value":"2016-12-11 14:00-15:00"},
+									            {"name":"面试状态","value":"安排中"}
+								         ]
+							},
+							{
+								"interviewArrangeMain":
+										[
+							                {"name":"面试官","value":"loyliu(刘存);superfang(方超)"},
+									            {"name":"面试类型","value":"群面(依次面)"},
+									            {"name":"面试地点","value":"腾讯大厦35楼3506"},
+									            {"name":"面试时间","value":"2016-12-25 14:00-15:00"},
+									            {"name":"面试状态","value":"已安排"}
+								            ]
+							}
+					 ],
+					 "interviewSituation":[
+					                       
+					         {
+					        	 "link":"专业初试",
+					        	 "approvePerson":"zhangsan(张三)",
+					        	 "loadMore":[
+					        	      {"value":"正式"},
+					        	      {"value":"P1"},
+					        	      {"value":"游戏策划"},
+					        	      {"value":"基础等"},
+					        	      {"value":"专业知识"},
+					        	      {"value":"专业技能"},
+					        	      {"value":"用户"},
+					        	      {"value":"好学"},
+					        	      {"value":"实干"},
+					        	      {"value":"语音内容"},
+					        	      {"value":"还不错"},
+					        	      {"value":"80"},
+					        	      {"value":"3.48"},
+					        	      {"value":"推荐"},
+					        	      {"value":"kals代xunzhang"},
+					        	      {"value":"2016-09-05 15:50:05"}
+					        	  ],
+					        	  "situationStatus":true
+					         },
+					         {
+					        	 "link":"第一轮复试",
+					        	 "approvePerson":"zhangsan(张三)",
+					        	 "loadMore":[
+					        	      {"value":"正式"},
+					        	      {"value":"P5"},
+					        	      {"value":"游戏策划"},
+					        	      {"value":"基础等"},
+					        	      {"value":"专业知识"},
+					        	      {"value":"专业技能"},
+					        	      {"value":"用户"},
+					        	      {"value":"好学"},
+					        	      {"value":"实干"},
+					        	      {"value":"语音内容"},
+					        	      {"value":"还不错"},
+					        	      {"value":"90"},
+					        	      {"value":"3.58"},
+					        	      {"value":"推荐"},
+					        	      {"value":"kals代xunzhang"},
+					        	      {"value":"2016-09-05 15:50:05"}
+					        	  ],
+					        	  "situationStatus":true
+					         },
+					         {
+					        	 "link":"通道分会面试",
+					        	 "approvePerson":"zhangsan(张三)",
+					        	 "loadMore":[
+					        	      {"value":"正式"},
+					        	      {"value":"P1"},
+					        	      {"value":"游戏策划"},
+					        	      {"value":"基础等"},
+					        	      {"value":"专业知识"},
+					        	      {"value":"专业技能"},
+					        	      {"value":"用户"},
+					        	      {"value":"好学"},
+					        	      {"value":"实干"},
+					        	      {"value":"语音内容"},
+					        	      {"value":"还不错"},
+					        	      {"value":"85"},
+					        	      {"value":"3.68"},
+					        	      {"value":"推荐"},
+					        	      {"value":"kals代xunzhang"},
+					        	      {"value":"2016-09-05 15:50:05"}
+					        	  ],
+					        	  "situationStatus":true
+					         },
+					         {
+					        	 "link":"HR资格面试",
+					        	 "approvePerson":"zhangsan(李四)",
+					        	 "loadMore":[
+					        	      {"value":"正式"},
+					        	      {"value":"P1"},
+					        	      {"value":"游戏策划"},
+					        	      {"value":"基础等"},
+					        	      {"value":"专业知识"},
+					        	      {"value":"专业技能"},
+					        	      {"value":"用户"},
+					        	      {"value":"好学"},
+					        	      {"value":"实干"},
+					        	      {"value":"语音内容"},
+					        	      {"value":"还不错"},
+					        	      {"value":"84"},
+					        	      {"value":"4.48"},
+					        	      {"value":"推荐"},
+					        	      {"value":"kals代xunzhang"},
+					        	      {"value":"2016-09-05 15:50:05"}
+					        	  ],
+					        	  "situationStatus":false
+					         },
+					         {
+					        	 "link":"HR薪资谈判",
+					        	 "approvePerson":"zhangsan(李四)",
+					        	 "loadMore":[
+					        	      {"value":"正式"},
+					        	      {"value":"P1"},
+					        	      {"value":"游戏策划"},
+					        	      {"value":"基础等"},
+					        	      {"value":"专业知识"},
+					        	      {"value":"专业技能"},
+					        	      {"value":"用户"},
+					        	      {"value":"好学"},
+					        	      {"value":"实干"},
+					        	      {"value":"语音内容"},
+					        	      {"value":"还不错"},
+					        	      {"value":"84"},
+					        	      {"value":"4.48"},
+					        	      {"value":"推荐"},
+					        	      {"value":"kals代xunzhang"},
+					        	      {"value":"2016-09-05 15:50:05"}
+					        	  ],
+					        	  "situationStatus":false
+					         },
+					         {
+					        	 "link":"部门经理审批",
+					        	 "approvePerson":"zhangsan(李四)",
+					        	 "loadMore":[
+					        	      {"value":"正式"},
+					        	      {"value":"P1"},
+					        	      {"value":"游戏策划"},
+					        	      {"value":"基础等"},
+					        	      {"value":"专业知识"},
+					        	      {"value":"专业技能"},
+					        	      {"value":"用户"},
+					        	      {"value":"好学"},
+					        	      {"value":"实干"},
+					        	      {"value":"语音内容"},
+					        	      {"value":"还不错"},
+					        	      {"value":"90"},
+					        	      {"value":"4.48"},
+					        	      {"value":"推荐"},
+					        	      {"value":"kals代xunzhang"},
+					        	      {"value":"2016-09-05 15:50:05"}
+					        	  ],
+					        	  "situationStatus":false
+					        	  
+					         }
+					         
+					         
+					                       
+	                       ],
+					"approveProcess":[
+							{	 "number":1,	
+					        	 "approveMain":[
+					        	      {
+									  "value":"发起面试流程"},									  
+					        	      {
+									  "value":"2016-09-01 14:51:07"},
+									  {
+									  "value":"提交 企业IT部"},
+									  {
+									  "value":"详情测试不清楚，详情测试不清楚详情测试不清楚"}
+					        	      
+					        	  ],
+					        	  "processStatus":false
+					        },
+							{	
+								 "number":2,
+					        	 "approveMain":[
+					        	      {
+										  "name":"步骤名称",
+										  "value":"专业初试"
+									  },									  									  
+					        	      {
+										  "name":"处理时间",
+										  "value":"2016-09-01 14:51:07"
+									  },
+									  {
+										  "name":"详情",
+										  "value":"张勋 外交部"
+									  },
+									  {
+										  "name":"其他",
+										  "value":"不清楚"
+									  }
+					        	      
+					        	  ],
+					        	  "processStatus":false
+					        }
+					
+					
+					]
+					
+	                  
+				}		        
+	    ]
+}		

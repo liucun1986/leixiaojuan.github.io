@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "isName": false,
+            "stepName": "部门专业初试",
+            "operatUser": "张军",
+            "isInterview": false
+        },
+        {
+            "id": 2,
+            "isName": false,
+            "stepName": "第一轮专业复试",
+            "operatUser": "",
+            "isInterview": false
+        },
+        {
+            "id": 3,
+            "isName": false,
+            "stepName": "第二轮专业复试",
+            "operatUser": "",
+            "isInterview": false
+        },
+        {
+            "id": 4,
+            "isName": false,
+            "stepName": "第三轮专业复试",
+            "operatUser": "",
+            "isInterview": false
+        },
+        {
+            "id": 5,
+            "isName": false,
+            "stepName": "通道分会复试",
+            "operatUser": "",
+            "isInterview": false
+        },
+        {
+            "id": 6,
+            "isName": false,
+            "stepName": "面试会复试",
+            "operatUser": "",
+            "isInterview": false
+        },
+        {
+            "id": 7,
+            "isName": false,
+            "stepName": "HR资格面试",
+            "operatUser": "",
+            "isInterview": false
+        },
+        {
+            "id": 8,
+            "isName": false,
+            "stepName": "HR薪资谈判",
+            "operatUser": "",
+            "isInterview": false
+        },
+        {
+            "id": 9,
+            "isName": false,
+            "stepName": "部门经理审批",
+            "operatUser": "",
+            "isInterview": false
+        }
+    ],
+    "Result":true
+}

@@ -1,0 +1,43 @@
+{
+    "additionalTurnover": [
+        {
+            "staffId": 1,
+            "name": "aaaxiong(熊文翔)",
+            "objective": "不确定",
+            "quitTime": "2015-09-11"
+        },
+        {
+            "staffId": 2,
+            "name": "aachen(陈芳英)",
+            "objective": "360",
+            "quitTime": "2016-01-02"
+        },
+        {
+            "staffId": 3,
+            "name": "aalizzlu(卢健彬)",
+            "objective": "不确定",
+            "quitTime": "2016-02-23"
+        }
+    ],
+    "replaceTransfer": [
+        {
+            "staffId": 1,
+            "name": "baal(黎巍)",
+            "objective": "不确定",
+            "callTime": "2015-09-11"
+        },
+        {
+            "staffId": 2,
+            "name": "baalfeng(冯知一)",
+            "objective": "360",
+            "callTime": "2016-01-02"
+        },
+        {
+            "staffId": 3,
+            "name": "baalren(任立新)",
+            "objective": "不确定",
+            "callTime": "2015-02-23"
+        }
+    ],
+    "Result": true
+}

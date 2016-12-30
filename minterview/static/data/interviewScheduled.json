@@ -1,0 +1,184 @@
+{
+    "address": [
+        {
+            "addressId": 1,
+            "name": "腾讯大厦"
+        },
+        {
+            "addressId": 2,
+            "name": "松日大厦"
+        },
+        {
+            "addressId": 3,
+            "name": "万利达"
+        },
+        {
+            "addressId": 4,
+            "name": "大族激光"
+        }
+    ],
+    "floor": [
+        {
+            "floorId": 1,
+            "name": "1楼"
+        },
+        {
+            "floorId": 2,
+            "name": "2楼"
+        },
+        {
+            "floorId": 3,
+            "name": "3楼"
+        },
+        {
+            "floorId": 4,
+            "name": "4楼"
+        },
+        {
+            "floorId": 5,
+            "name": "5楼"
+        },
+        {
+            "floorId": 35,
+            "name": "35楼"
+        }
+    ],
+    "boardroom": [
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 1,
+            "name": "3506-甲秀楼-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": false,
+            "whiteboard": false,
+            "pc": false,
+            "telephone": true,
+            "tv": false,
+            "mic": false,
+            "isSelect": false
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 1,
+            "name": "3507-太白山-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": true,
+            "whiteboard": false,
+            "pc": true,
+            "telephone": true,
+            "tv": true,
+            "mic": false,
+            "isSelect": true
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 1,
+            "name": "3508-终南山-深圳",
+            "userNum": 6,
+            "projector": false,
+            "conferenceCall": true,
+            "whiteboard": false,
+            "pc": false,
+            "telephone": true,
+            "tv": true,
+            "mic": false,
+            "isSelect": false
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 1,
+            "name": "3509-翠华山-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": false,
+            "whiteboard": true,
+            "pc": true,
+            "telephone": false,
+            "tv": false,
+            "mic": false,
+            "isSelect": false
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 1,
+            "name": "3516-华山-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": false,
+            "whiteboard": false,
+            "pc": false,
+            "telephone": true,
+            "tv": false,
+            "mic": true,
+            "isSelect": false
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 1,
+            "name": "3526-长白山-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": true,
+            "whiteboard": true,
+            "pc": false,
+            "telephone": false,
+            "tv": true,
+            "mic": false,
+            "isSelect": false
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 2,
+            "name": "3536-甲秀楼-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": false,
+            "whiteboard": false,
+            "pc": false,
+            "telephone": true,
+            "tv": false,
+            "mic": false,
+            "isSelect": false
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 3,
+            "name": "3546-甲秀楼-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": false,
+            "whiteboard": false,
+            "pc": false,
+            "telephone": true,
+            "tv": false,
+            "mic": false,
+            "isSelect": false
+        },
+        {
+            "boardroomId": 1,
+            "floorId": 1,
+            "addressId": 4,
+            "name": "3556-甲秀楼-深圳",
+            "userNum": 6,
+            "projector": true,
+            "conferenceCall": false,
+            "whiteboard": false,
+            "pc": false,
+            "telephone": true,
+            "tv": false,
+            "mic": false,
+            "isSelect": false
+        }
+    ],
+    "Result": true
+}

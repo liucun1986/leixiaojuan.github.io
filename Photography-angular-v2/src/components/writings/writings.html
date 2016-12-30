@@ -1,0 +1,61 @@
+
+<div class="first-widget parallax" id="blog">
+	<div class="parallax-overlay">
+		<div class="container pageTitle">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h2 class="page-title">随笔漫谈</h2>
+				</div> 
+				<div class="col-md-6 col-sm-6 text-right">
+					<span class="page-location">首页 / 随笔漫谈</span>
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+</div> 
+<div class="container">	
+	<div class="row">
+		<div class="col-md-8 blog-posts">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="archive-wrapper">
+						<!-- <p>Feel free to download templates from templatemo.com website. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, excepturi ullam officia debitis blanditiis eos omnis asperiores eaque mollitia consequatur in aspernatur delectus ab accusantium itaque dolores alias provident veritatis repellendus culpa nemo vel accusamus!</p> -->
+						<!-- <h3 class="archive-title">Latest 10 Posts</h3> -->
+						<ul class="archive-list">
+                            <li ng-repeat="item in vm.writeList" ui-sref="writingsdetail"  >
+                            	<a href="javascript:void(0)">{{item.name}}</a>
+                            </li>  
+                        </ul>
+						<!-- 分页 -->
+						<page ng-if="vm.drawList.length>0"  page-count="vm.pageCount" page-index="vm.page.pageIndex" page-size="vm.page.pageSize" total-count="vm.totalCount"></page>
+						
+
+                       <!--  <h3 class="archive-title">Archives by Month:</h3>
+                        <ul class="archive-list">
+                            <li><a href="#">January 2084</a></li>
+                            <li><a href="#">December 2083</a></li>
+                            <li><a href="#">November 2083</a></li>
+                            <li><a href="#">October 2083</a></li>
+                            <li><a href="#">September 2083</a></li>
+                            <li><a href="#">August 2083</a></li>
+                            <li><a href="#">July 2083</a></li>
+                        </ul>
+                        <h3 class="archive-title">Archives by Categories:</h3>
+                        <ul class="archive-list">
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Famliy</a></li>
+                            <li><a href="#">Government</a></li>
+                            <li><a href="#">Health</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Student Achievements</a></li>
+                            <li><a href="#">Tech &amp; Engineering</a></li>
+                        </ul> -->
+					</div>
+				</div> 
+			</div> 
+		</div>
+		<div class="col-md-4">
+			<right-recent></right-recent>
+		</div>
+	</div> 
+</div> 

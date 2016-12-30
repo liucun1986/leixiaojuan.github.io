@@ -1,0 +1,35 @@
+<div class="first-widget parallax" id="blog">
+	<div class="parallax-overlay">
+		<div class="container pageTitle">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h2 class="page-title">随笔漫谈</h2>
+				</div> 
+				<div class="col-md-6 col-sm-6 text-right">
+					<span class="page-location">首页 / 随笔漫谈</span>
+				</div> 
+			</div> 
+		</div>  
+	</div> 
+</div> 
+
+<div class="container">	
+	<div class="row">
+		<div class="col-md-8 blog-posts">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center">{{vm.write.name}}</h2>
+					<div class="archive-wrapper">
+						<p>
+							<img src="{{vm.write.imgUrl}}">
+						</p>
+						<p>{{vm.write.content}}</p>
+					</div>
+				</div> 
+			</div> 
+		</div> 
+		<div class="col-md-4">
+			<right-recent></right-recent>
+		</div> 
+	</div> 
+</div>  

@@ -1,0 +1,44 @@
+<div class="sidebar">
+  <div class="sidebar-widget">
+    <h5 class="widget-title">最新【分享作品】</h5>
+    <div class="last-post clearfix" ng-repeat="item in vm.workList">
+      <div class="thumb pull-left">
+        <a  ui-sref="workdetail">
+          <img src="{{item.imgUrl[0].url}}" alt="">
+        </a>
+      </div>
+      <div class="content">
+        <span>{{item.date}}</span>
+        <h4 ui-sref="workdetail"><a href="javascript:void">{{item.title}}</a></h4>
+      </div>
+    </div>
+  </div> 
+  <div class="sidebar-widget">
+    <h5 class="widget-title">最新【摄影·绘画】</h5>
+    <div class="row categories">
+      <div class="col-md-6">
+        <ul>
+          <li ng-repeat="item in vm.drawList" ui-sref="photopaintdetail"><a href="javascript:void">{{item.tagName}}</a></li>
+        </ul>
+      </div>
+    </div> 
+  </div>  
+  <div class="sidebar-widget">
+    <h5 class="widget-title">最新【随笔漫谈】</h5>
+    <div class="row categories">
+      <div class="col-md-6">
+        <ul>
+          <li ng-repeat="item in vm.writeList"  ui-sref="writingsdetail">
+            <a href="javascript:void">{{item.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div> 
+  </div> 
+  <div class="sidebar-widget">
+    <h5 class="widget-title">【每日一句】</h5>
+    <p class="light-text">
+      {{vm.wisdom.content}}    【{{vm.wisdom.user}}】
+    </p>
+  </div> 
+</div> 

@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name":"叶峰",
+            "rID": "201610132",
+            "education":"本科",
+            "mobile":15296325634,
+            "updateTime":"2019-09-08 12:45",
+            "currentState":"目前处于面试流程中，第1轮复试，处理人：张军",
+            "describe":"无相关数据！",
+            "station":"Teg06-游戏策划;",
+            "skill":"无相关数据！",
+            "department":"企业IT部",
+            "email":"74125652@qq.com",
+            "sex":"男",
+            "birthday":"1990-01-12",
+            "address":"南京",
+            "jobTime":"3年",
+            "universities":"南京大学",
+            "profession":"交互设计"
+        },
+        {
+            "id": 2,
+            "name":"叶峰春",
+            "rID": "201610133",
+            "education":"本科",
+            "mobile":15296325623,
+            "updateTime":"2019-09-07 11:45",
+            "currentState":"目前处于面试流程中，第1轮复试，处理人：张军",
+            "describe":"叶峰春工作认真！",
+            "station":"Teg06-游戏策划;",
+            "skill":"无相关数据！",
+            "department":"浏览器产品部",
+            "email":"74125652@qq.com",
+            "sex":"男",
+            "birthday":"1990-01-12",
+            "address":"南京",
+            "jobTime":"3年",
+            "universities":"南京大学",
+            "profession":"交互设计"
+        }
+    ],
+    "totalCount":"5",
+    "Result":true
+} 

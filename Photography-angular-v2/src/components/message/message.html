@@ -1,0 +1,100 @@
+<div class="first-widget parallax" id="contact">
+	<div class="parallax-overlay">
+		<div class="container pageTitle">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h2 class="page-title">留言板</h2>
+				</div> 
+				<div class="col-md-6 col-sm-6 text-right">
+					<span class="page-location">首页 / 留言板</span>
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+</div>  
+<div class="container">	
+	<div class="row">
+		<div class="col-md-8 blog-posts">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="contact-wrapper">
+                        <ul>
+                            <li><span>网名：</span><label>半岛Cara°</label></li>
+                            <li><span>姓名：</span><label>Jone | 雷晓娟</label></li>
+                            <li><span>籍贯：</span><label>甘肃省-平凉市</label></li>
+                            <li><span>现居：</span><label>西安市-雁塔区</label></li>
+                            <li><span>职业：</span><label>网站设计、网站制作</label></li>
+                            <li><span>喜欢的书：</span><label>《摆渡人》 《自在独行》</label></li>
+                            <li><span>喜欢的音乐：</span><label>《幸福就是》 《不完美女孩》 《小幸运》</label></li>
+                        </ul>
+						<div class="contact-map">
+		                    <div id="allmap" style="height: 320px;">
+		                    </div>
+		                    <script type="text/javascript">
+								// 百度地图API功能
+								var map = new BMap.Map("allmap");
+								var point = new BMap.Point(108.887548,34.230746);
+								map.centerAndZoom(point, 15);
+								var marker = new BMap.Marker(point);  // 创建标注
+								map.addOverlay(marker);               // 将标注添加到地图中
+								marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+							</script>
+		                </div>
+					</div> 
+				</div> 
+			</div> 
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="contact-form">
+                        <h3>联系我</h3>
+                        <div class="widget-inner">
+                        <form action="#" method="post" id="contact-form">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p>
+                                        <label for="name">姓名:</label>
+                                        <input type="text" name="name" id="name">
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>
+                                        <label for="email">邮箱:</label>
+                                         <input type="text" name="email" id="email">
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>
+                                        <label for="subject">标题:</label>
+                                         <input type="text" name="subject" id="subject">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>
+                                        <label for="message">内容:</label>
+                                        <textarea name="message" id="message"></textarea>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="mainBtn" id="submit">提交</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                            	<div class="col-md-12">
+                            		<div id="result"></div>
+                            	</div>  
+                            </div> 
+                        </form>
+                      </div> 
+                    </div> 
+                </div> 
+            </div> 
+		</div>
+		<div class="col-md-4">
+			<right-recent></right-recent>
+		</div>
+	</div> 
+</div>

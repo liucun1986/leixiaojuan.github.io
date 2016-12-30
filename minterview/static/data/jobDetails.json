@@ -1,0 +1,164 @@
+{
+    "interviewComment": {
+        "positionClass": [
+            {
+                "id": 1,
+                "value": 1,
+                "type": "游戏策划类 - GD"
+            },
+            {
+                "id": 2,
+                "value": 2,
+                "type": "产品类 - PDM"
+            },
+            {
+                "id": 3,
+                "value": 3,
+                "type": "项目类 - PM"
+            },
+            {
+                "id": 4,
+                "value": 4,
+                "type": "游戏策划类 - GD"
+            },
+            {
+                "id": 5,
+                "value": 5,
+                "type": "高级管理者 - SM"
+            },
+            {
+                "id": 6,
+                "value": 6,
+                "type": "领导者 - LE"
+            }
+        ],
+        "arrangePosition": [
+            {
+                "id": 1,
+                "value": 1,
+                "type": "产品运营"
+            },
+            {
+                "id": 2,
+                "value": 2,
+                "type": "类目运营"
+            },
+            {
+                "id": 3,
+                "value": 3,
+                "type": "产品策划"
+            }
+        ],
+        "recommendRank": [
+            {
+                "id": 1,
+                "value": 1,
+                "type": "P1"
+            },
+            {
+                "id": 2,
+                "value": 2,
+                "type": "P2"
+            },
+            {
+                "id": 3,
+                "value": 3,
+                "type": "P3"
+            }
+        ],
+        "recommendSubset": [
+            {
+                "id": 1,
+                "value": 1,
+                "type": "基础等"
+            },
+            {
+                "id": 2,
+                "value": 2,
+                "type": "普通等"
+            },
+            {
+                "id": 3,
+                "value": 3,
+                "type": "职业等"
+            }
+        ],
+        "score": [
+            {
+                "id": 1,
+                "project": "专业知识",
+                "weight": "25%",
+                "evaluationDetails": "",
+                "mark": "",
+                "comment": "",
+                "risk": "",
+                "write": "",
+                "totalSystem": "",
+                "result": "3.48",
+                "evaluate": ""
+            },
+            {
+                "id": 2,
+                "project": "专业技能",
+                "weight": "25%",
+                "evaluationDetails": "",
+                "mark": "",
+                "Comment": "",
+                "risk": "",
+                "write": "",
+                "totalSystem": "",
+                "result": "3.48",
+                "evaluate": ""
+            },
+            {
+                "id": 3,
+                "project": "用户",
+                "weight": "15%",
+                "evaluationDetails": "",
+                "mark": "",
+                "Comment": "",
+                "risk": "",
+                "write": "",
+                "totalSystem": "",
+                "result": "3.48",
+                "evaluate": ""
+            },
+            {
+                "id": 4,
+                "project": "好学",
+                "weight": "20%",
+                "evaluationDetails": "",
+                "mark": "",
+                "Comment": "",
+                "risk": "",
+                "write": "",
+                "totalSystem": "",
+                "result": "3.48",
+                "evaluate": ""
+            },
+            {
+                "id": 5,
+                "project": "实干",
+                "weight": "15%",
+                "evaluationDetails": "",
+                "mark": "",
+                "Comment": "",
+                "risk": "",
+                "write": "",
+                "totalSystem": "",
+                "result": "3.48",
+                "evaluate": ""
+            }
+        ],
+        "motivation":"",
+        "comment": "总的来说，表现不错",
+        "risk": "",
+        "write": "",
+        "evaluate": "",
+        "totalSystem": "",
+        "employer":"正式"
+    },
+    "text": "2016.8.31   12:40",
+    "Result": true,
+    "ResultStr": ""
+}

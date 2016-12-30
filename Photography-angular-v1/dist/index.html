@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Jone</title>
+  <meta name="keywords" content="雷晓娟">
+  <meta name="description" content="IT行业">
+  <meta name="author" content="Jone">    
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/misc.css">
+  <link rel="stylesheet" href="assets/css/blue-scheme.css">
+  <link rel="stylesheet" href="assets/css/common.css"> 
+  <!-- JavaScripts -->
+  <script src="assets/js/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5c56d3666cf0bd577d72f0a94776ef52"></script>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+<body ng-app="app" ng-controller="index">
+  <div>
+    <!-- 头部 -->
+    <div class="responsive_menu">
+        <ul class="main_menu">                                
+            <li ng-class="{'active':$route.current.active=='Home'}">
+              <a href="#/Home/Index" >首页</a>
+            </li>
+            <li ng-class="{'active':$route.current.active=='Works' || $route.current.active=='WorksDetail'}">
+              <a href="#/Works/Index" >作品分享</a>
+            </li>
+            <li ng-class="{'active':$route.current.active=='Photopaint' || $route.current.active=='PhotopaintDetail'}">
+              <a href="#/Photopaint/Index" >摄影绘画</a>
+            </li>
+            <li ng-class="{'active':$route.current.active=='Writings' || $route.current.active=='WritingsDetail'}"><a href="#/Writings/Index">随笔漫谈</a></li>
+            <li ng-class="{'active':$route.current.active=='AboutMe'}">
+              <a href="#/AboutMe/Index" >关于我</a>
+            </li>
+            <li ng-class="{'active':$route.current.active=='Message'}"><a href="#/Message/Index">留言板</a></li>
+        </ul>
+    </div>
+    <header class="site-header clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pull-left logo">
+              <a href="#/Home/Index">
+                <img src="assets/images/logo.png" alt="Medigo by templatemo">
+              </a>
+            </div>
+            <div class="main-navigation pull-right">
+              <nav class="main-nav visible-md visible-lg">
+                <ul class="sf-menu">                                 
+                    <li ng-class="{'active':$route.current.active=='Home'}">
+                      <a href="#/Home/Index" >首页</a>
+                    </li>
+                    <li ng-class="{'active':$route.current.active=='Works' || $route.current.active=='WorksDetail'}">
+                      <a href="#/Works/Index" >作品分享</a>
+                    </li>
+                    <li ng-class="{'active':$route.current.active=='Photopaint' || $route.current.active=='PhotopaintDetail'}">
+                      <a href="#/Photopaint/Index" >摄影绘画</a>
+                    </li>
+                    <li ng-class="{'active':$route.current.active=='Writings' || $route.current.active=='WritingsDetail'}"><a href="#/Writings/Index">随笔漫谈</a></li>
+                    <li ng-class="{'active':$route.current.active=='AboutMe'}">
+                      <a href="#/AboutMe/Index" >关于我</a>
+                    </li>
+                    <li ng-class="{'active':$route.current.active=='Message'}"><a href="#/Message/Index">留言板</a></li>
+                </ul> 
+              </nav>
+                <div class="responsive-navigation visible-sm visible-xs">
+                    <a href="#nogo" class="menu-toggle-btn">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </header> 
+    <!-- 内容 -->
+    <div ng-view></div>
+    <!-- 底部 -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pull-left">
+              <ul>
+                <li><span>gitHub地址：</span><label>https://github.com/leixiaojuan</label></li>
+                <li><span>QQ：</span><label>787161424</label></li>
+                <li><span>邮箱：</span><label>jone_lei@qq.com</label></li>
+              </ul>
+              <p> Copyright © 2016 . All Rights Reserved. 版权所有.</p>
+            </div>
+            <div class="pull-right">
+              <img src="assets/images/qq.jpg" alt="扫一扫，加qq联系">
+              <img src="assets/images/wx.jpg" alt="扫一扫，加微信联系">
+            </div>
+          </div>
+        </div>  
+      </div>  
+    </footer> 
+  </div>  
+  <script src="assets/js/min/plugins.min.js"></script> 
+<script type="text/javascript" src="build.js"></script></body>
+</html>

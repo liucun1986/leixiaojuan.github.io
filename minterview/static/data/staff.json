@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": 34303,
+            "name": "ethanhua(华海风)",
+            "status": 1,
+            "type": 2
+        },
+        {
+            "id": 57447,
+            "name": "loyliu(刘存)",
+            "status": 1,
+            "type": 2
+        },
+        {
+            "id": 17037,
+            "name": "kindywu(吴奕雄)",
+            "status": 1,
+            "type": 2
+        }
+    ],
+    "Result":true
+}

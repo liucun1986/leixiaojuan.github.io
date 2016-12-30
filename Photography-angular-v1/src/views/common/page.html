@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="pages">
+				<li><span class='oagrid_pagenav_recordcnt'>共<strong>{{totalCount}}</strong>行</span></li>
+				<li> <a ng-click="getPageList(pageIndex-1)" ng-class="[pageIndex==1?'active':'']" ng-click="getPageList(pageIndex-1)">&lt;</a></li>
+				<li> <a ng-repeat="page in pageList" ng-click="getPageList(page)" ng-class="[page===pageIndex?'active':'']">{{page}}</a></li>
+				<li><a ng-click="getPageList(pageIndex+1)" ng-class="[pageIndex==totalPace||totalPace===0?'active':'']">&gt;</a></li>   
+				<li>每页显示
+					<input ng-model="pageSize" ng-change="sizeChange()" number/>行
+				</li>	
+			</ul>
+		</div>
+	</div>
+</div>

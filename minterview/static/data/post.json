@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "安全产品财务管理组外包岗(64277);",
+            "post": "高级工程师",
+            "rank": "P3",
+            "jobFamily": "产品/项目族(PD)",
+            "jobType": "项目类－PM",
+            "jobSystem": "腾讯外包员工",
+            "type": "正式",
+            "department": "安全产品财务管理组外包岗",
+            "jobAddress": "深圳总部"
+        },
+        {
+            "id": 2,
+            "name": "安全产品财务管理组员工(64276);",
+            "post": "高级工程师",
+            "rank": "P5",
+            "jobFamily": "产品/项目族(PD)",
+            "jobType": "项目类－PM",
+            "jobSystem": "腾讯正式员工",
+            "type": "正式",
+            "department": "安全产品财务管理组员工",
+            "jobAddress": "深圳总部"
+        },
+        {
+            "id": 3,
+            "name": "安全产品财务管理组组长(64275);",
+            "post": "WEB开发高级工程师",
+            "rank": "P4",
+            "jobFamily": "产品/项目族(PD)",
+            "jobType": "项目类－PM",
+            "jobSystem": "腾讯正式员工",
+            "type": "正式",
+            "department": "安全产品财务管理组组长",
+            "jobAddress": "深圳总部"
+        }
+    ],
+    "Result": true
+}

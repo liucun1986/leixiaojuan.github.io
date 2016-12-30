@@ -1,0 +1,52 @@
+<div class="first-widget parallax" id="blog">
+	<div class="parallax-overlay">
+		<div class="container pageTitle">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h2 class="page-title">摄影绘画</h2>
+				</div> 
+				<div class="col-md-6 col-sm-6 text-right">
+					<span class="page-location">首页 / 摄影绘画</span>
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+</div> 
+
+<div class="container">	
+	<div class="row">
+		<div class="col-md-8 blog-posts">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="post-blog" ng-repeat="item in vm.drawList">
+						<div class="blog-image" ui-sref="photopaintdetail">
+							<a  href="javascript:void(0)">
+								<img src="{{item.imgUrl}}" alt="{{item.name}}">
+							</a>
+						</div> 
+						<div class="blog-content">
+							<span class="meta-date">{{item.date}}</span>
+							<span class="meta-comments">{{item.rangeTime}}</span>
+							<span class="meta-author">{{item.type}}</span>
+							<h3 ui-sref="photopaintdetail"><a  href="javascript:void(0)" >{{item.name}}</a></h3>
+							<p class="light-text">{{item.simple}}</p>
+							<p>
+								<span ng-if="!item.toggle" ng-bind="item.content.length > 100 ? item.content.substring(0,100) : item.content"></span>
+								<span ng-if="item.toggle">更多{{item.content}}</span>
+								<a href="javascript:void(0)" ng-if="item.content.length > 100 && !item.toggle" ng-click="item.toggle = true">展开全部</a>
+								<a href="javascript:void(0)" ng-if="item.content.length > 100 && item.toggle" ng-click="item.toggle = false">收起部分</a>
+							</p>
+						</div> 
+					</div>
+				</div> 
+				<!-- 分页 -->
+				<page ng-if="vm.drawList.length>0"  page-count="vm.pageCount" page-index="vm.page.pageIndex" page-size="vm.page.pageSize" total-count="vm.totalCount"></page>
+			</div> 
+		</div> 
+
+		<div class="col-md-4">
+			<right-recent></right-recent>
+		</div> 
+
+	</div> 
+</div> 

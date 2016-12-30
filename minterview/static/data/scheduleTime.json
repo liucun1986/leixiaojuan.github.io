@@ -1,0 +1,433 @@
+{
+    "data": [
+        {
+            "userId": 1,
+            "userName": "ethanhua(华海风)",
+            "day": "",
+            "dayList": "",
+            "daySelect": "",
+            "currentTime": "11:00-11:30",
+            "floorId": 0,
+            "addressId": 0,
+            "addressType": 1,
+            "otherAddress": "",
+            "boardroomList": [],
+            "mouseDownState":false,
+            "time": [
+                {
+                    "timeId": 1,
+                    "name": "9:00",
+                    "byName": "9:30",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 2,
+                    "name": "9:30",
+                    "byName": "10:00",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 3,
+                    "name": "10:00",
+                    "byName": "10:30",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 4,
+                    "name": "10:30",
+                    "byName": "11:00",
+                    "isBusy": false,
+                    "isSelect": true
+                },
+                {
+                    "timeId": 5,
+                    "name": "11:00",
+                    "byName": "11:30",
+                    "isBusy": false,
+                    "isSelect": true
+                },
+                {
+                    "timeId": 6,
+                    "name": "11:30",
+                    "byName": "12:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 7,
+                    "name": "12:00",
+                    "byName": "12:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 8,
+                    "name": "12:30",
+                    "byName": "13:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 9,
+                    "name": "13:00",
+                    "byName": "13:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 10,
+                    "name": "13:30",
+                    "byName": "14:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 11,
+                    "name": "14:00",
+                    "byName": "14:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 12,
+                    "name": "14:30",
+                    "byName": "15:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 13,
+                    "name": "15:00",
+                    "byName": "15:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 14,
+                    "name": "15:30",
+                    "byName": "16:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 15,
+                    "name": "16:00",
+                    "byName": "16:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 16,
+                    "name": "16:30",
+                    "byName": "17:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 17,
+                    "name": "17:00",
+                    "byName": "17:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 18,
+                    "name": "17:30",
+                    "byName": "18:00",
+                    "isBusy": false,
+                    "isSelect": false
+                }
+            ]
+        },
+        {
+            "userId": 2,
+            "userName": "loyliu(刘存)",
+            "day": "",
+            "dayList": "",
+            "daySelect": "",
+            "currentTime": "11:00-11:30",
+            "floorId": 0,
+            "addressId": 0,
+            "addressType": 1,
+            "otherAddress": "",
+            "boardroomList": [],
+            "mouseDownState":false,
+            "time": [
+                {
+                    "timeId": 1,
+                    "name": "9:00",
+                    "byName": "9:30",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 2,
+                    "name": "9:30",
+                    "byName": "10:00",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 3,
+                    "name": "10:00",
+                    "byName": "10:30",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 4,
+                    "name": "10:30",
+                    "byName": "11:00",
+                    "isBusy": false,
+                    "isSelect": true
+                },
+                {
+                    "timeId": 5,
+                    "name": "11:00",
+                    "byName": "11:30",
+                    "isBusy": false,
+                    "isSelect": true
+                },
+                {
+                    "timeId": 6,
+                    "name": "11:30",
+                    "byName": "12:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 7,
+                    "name": "12:00",
+                    "byName": "12:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 8,
+                    "name": "12:30",
+                    "byName": "13:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 9,
+                    "name": "13:00",
+                    "byName": "13:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 10,
+                    "name": "13:30",
+                    "byName": "14:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 11,
+                    "name": "14:00",
+                    "byName": "14:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 12,
+                    "name": "14:30",
+                    "byName": "15:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 13,
+                    "name": "15:00",
+                    "byName": "15:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 14,
+                    "name": "15:30",
+                    "byName": "16:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 15,
+                    "name": "16:00",
+                    "byName": "16:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 16,
+                    "name": "16:30",
+                    "byName": "17:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 17,
+                    "name": "17:00",
+                    "byName": "17:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 18,
+                    "name": "17:30",
+                    "byName": "18:00",
+                    "isBusy": false,
+                    "isSelect": false
+                }
+            ]
+        },
+        {
+            "userId": 3,
+            "userName": "kindywu(吴奕雄)",
+            "day": "",
+            "dayList": "",
+            "daySelect": "",
+            "currentTime": "11:00-11:30",
+            "floorId": 0,
+            "addressId": 0,
+            "addressType": 1,
+            "otherAddress": "",
+            "boardroomList": [],
+            "mouseDownState":false,
+            "time": [
+                {
+                    "timeId": 1,
+                    "name": "9:00",
+                    "byName": "9:30",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 2,
+                    "name": "9:30",
+                    "byName": "10:00",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 3,
+                    "name": "10:00",
+                    "byName": "10:30",
+                    "isBusy": true,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 4,
+                    "name": "10:30",
+                    "byName": "11:00",
+                    "isBusy": false,
+                    "isSelect": true
+                },
+                {
+                    "timeId": 5,
+                    "name": "11:00",
+                    "byName": "11:30",
+                    "isBusy": false,
+                    "isSelect": true
+                },
+                {
+                    "timeId": 6,
+                    "name": "11:30",
+                    "byName": "12:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 7,
+                    "name": "12:00",
+                    "byName": "12:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 8,
+                    "name": "12:30",
+                    "byName": "13:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 9,
+                    "name": "13:00",
+                    "byName": "13:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 10,
+                    "name": "13:30",
+                    "byName": "14:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 11,
+                    "name": "14:00",
+                    "byName": "14:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 12,
+                    "name": "14:30",
+                    "byName": "15:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 13,
+                    "name": "15:00",
+                    "byName": "15:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 14,
+                    "name": "15:30",
+                    "byName": "16:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 15,
+                    "name": "16:00",
+                    "byName": "16:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 16,
+                    "name": "16:30",
+                    "byName": "17:00",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 17,
+                    "name": "17:00",
+                    "byName": "17:30",
+                    "isBusy": false,
+                    "isSelect": false
+                },
+                {
+                    "timeId": 18,
+                    "name": "17:30",
+                    "byName": "18:00",
+                    "isBusy": false,
+                    "isSelect": false
+                }
+            ]
+        }
+    ],
+    "Result": true
+}
+
+

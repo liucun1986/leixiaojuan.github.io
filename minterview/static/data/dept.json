@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "A3项目组(14381)",
+            "formalPreparationNum": 290,
+            "formalcurrentNum":314,
+            "externalPreparationNum": 290,
+            "externalcurrentNum":314          
+        },
+        {
+            "id": 2,
+            "name": "ACG产品组(10429)",
+            "formalPreparationNum": 290,
+            "formalcurrentNum":314,
+            "externalPreparationNum": 290,
+            "externalcurrentNum":314  
+        },
+        {
+            "id": 3,
+            "name": "ACT产品中心(10442)",
+            "formalPreparationNum": 290,
+            "formalcurrentNum":314,
+            "externalPreparationNum": 290,
+            "externalcurrentNum":314  
+        }
+    ],
+    "Result":true
+}
