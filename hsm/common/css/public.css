@@ -679,6 +679,7 @@ em,i{
     display:block;
     border-radius: 2px;
     margin: 30px auto 0 auto;
+   font-size:1.4rem;
 }
 .coupon ul li .right em{ 
     right:0;
@@ -695,19 +696,19 @@ em,i{
 }
 .coupon ul li .left h1{
    color:#104082; 
-   font-size:30px;
+   font-size:3rem;
    font-weight:normal;
    padding-left:10%;
 }
 .coupon ul li .left h1 i{ 
-   font-size:16px;
+   font-size:1.6rem;
    margin-left:5px;    
    vertical-align: middle;
 }
 .coupon ul li .left p{
    padding-left:10%;
     color:#ABB7C1;
-    font-size:14px;
+    font-size:1.4rem;
 }
 
 .coupon ul.gray li .left h1{
@@ -735,7 +736,7 @@ em,i{
     background:#fff;
     text-align:center; 
     color:#929292;
-    font-size: 14px;
+    font-size: 1.4rem;
     vertical-align:middle;
 }
 .pay-icon p{
@@ -876,7 +877,7 @@ em,i{
     padding:10px 10px 5px;
 }
 .delay-tip p{
-    font-size:12px;
+    font-size:1.2rem;
     color:#FF3737;
     line-height:20px;
 }
