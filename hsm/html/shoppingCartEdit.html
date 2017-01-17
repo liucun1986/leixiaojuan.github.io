@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>华山牧-购物车编辑</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/public.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <!-- 返回 -->
+    <div class="return-last">
+        <img src="../common/images/array.jpg"> 购物车
+        <a href="javascript:;">编辑</a>
+    </div>
+    <!-- list -->
+    <div class="order order-edit">
+        <ul>
+            <li>
+                <div class="weui-cells_checkbox">
+                    <label class="weui-check__label" for="s11">
+                        <div class="weui-cell__hd">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                            <i class="weui-icon-checked"></i>
+                        </div>
+                    </label>
+                    <div class="order-product">
+                        <img src="../common/images/product/detial1.png">
+                        <p class="title">优质纯牛奶</p>
+                        <p class="content">巴氏杀菌，新鲜原滋味.</p>
+                        <p class="price"><i>¥38</i> /瓶 <strong>合计：</strong><em>￥266</em></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>日配数量：</span>
+                <div class="edit num">
+                    <a href="javascript:;" class="disable">-</a>
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">+</a>
+                </div>
+            </li>
+            <li>
+                <span>配送频率：</span>
+                <div class="edit rate">
+                    <a href="javascript:;" class="active">每天送</a>
+                    <a href="javascript:;">隔天送</a>
+                    <a href="javascript:;">工作日送</a>
+                </div>
+            </li>
+            <li>
+                <span>订购时长：</span>
+                <div class="edit">
+                    <div class="weui-cell weui-cell_select">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select1">
+                                <option selected="" value="1">7天</option>
+                                <option value="2">2天</option>
+                                <option value="3">3天</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>起配日期：</span>
+                <div class="edit">
+                    <div class="weui-cell weui-cell_select weui-cell-input">
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="date" type="text" value="2017-01-16">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+        $("#date").calendar({
+            onChange: function (p, values, displayValues) {
+              console.log(values, displayValues);
+            }
+        });
+        $(".rate a").click(function(){
+            $(this).siblings().removeClass('active').end().addClass('active');
+        });
+    </script>
+    <!-- 结算 -->
+    <div class="order-settle">
+        <div class="weui-cells_checkbox">
+            <label class="weui-check__label" for="s13">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s13" checked="checked">
+                    <i class="weui-icon-checked"></i>
+                </div>
+            </label>
+        </div>
+        <span>全选</span>
+        <span>总价：<i class="red">￥532</i></span>
+        <button class="btn red-bg">删除</button>
+    </div>
+    <!-- 底部导航 -->
+    <div class="weui-tabbar">
+        <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_button.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="#tab2" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_msg.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">订单</p>
+        </a>
+        <a href="#tab3" class="weui-tabbar__item">
+            <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_article.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">购物车</p>
+        </a>
+        <a href="#tab4" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="./images/icon_nav_cell.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">我的</p>
+        </a>
+    </div>
+</body>
+
+</html>

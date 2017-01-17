@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>华山牧-商品详情</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/public.js"></script>
+</head>
+
+<body ontouchstart>
+    <div class="detail">
+        <!-- 返回 -->
+        <div class="return-last">
+            <img src="../common/images/array.jpg"> 商品详情
+        </div>
+        <!-- 滚动 -->
+        <div class="swiper-container detail">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../common/images/product/detial1.png" /></div>
+                <div class="swiper-slide"><img src="../common/images/product/detial1.png" /></div>
+                <div class="swiper-slide"><img src="../common/images/product/detial1.png" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+        $(".swiper-container").swiper({
+            loop: true,
+            autoplay: 3000
+        });
+        </script>
+        <div class="detail-wrap">
+            <div class="detail">
+                <span class="sold-name pull-left">
+                优质纯牛奶
+            </span>
+                <span class="sold-num pull-right">
+                <i>¥25</i>/袋
+            </span>
+            </div>
+            <div class="detail-sold">
+                <span class="sold-name pull-left">
+                巴氏杀菌，新鲜原滋味.
+            </span>
+                <span class="sold-num pull-right">
+                总销量：2420
+            </span>
+            </div>
+        </div>
+        <h1 class="detail-title">
+        订奶规则
+    </h1>
+        <div class="detail-con">
+            当天上午十点后完成付款，配送员将于后天为您配送...
+        </div>
+        <h1 class="detail-title">
+        商品信息
+    </h1>
+        <div class="detail-con">
+            <div class="weui-form-preview">
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">商品：</label>
+                    <span class="weui-form-preview__value">华山牧 （中垦乳业）</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">产品名称：</label>
+                    <span class="weui-form-preview__value">优质纯牛奶</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">产品类型：</label>
+                    <span class="weui-form-preview__value">巴氏杀菌 优质纯牛奶</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">净含量：</label>
+                    <span class="weui-form-preview__value">250g／瓶 </span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">配料：</label>
+                    <span class="weui-form-preview__value">生鲜牛乳</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">保质期：</label>
+                    <span class="weui-form-preview__value">7天</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">贮存条件：</label>
+                    <span class="weui-form-preview__value">2℃~6℃ 低温冷藏，避免阳光暴晒，本品为低温冷链视频，24小时内饮用效果最佳</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">功能描述：</label>
+                    <span class="weui-form-preview__value">100%纯鲜牛奶，经巴氏杀菌工艺制成，最大限度保留牛奶中的营养成分。</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">产地：</label>
+                    <span class="weui-form-preview__value">陕西西安</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">适用人群：</label>
+                    <span class="weui-form-preview__value">所有人群</span>
+                </div>
+            </div>
+        </div>
+        <div class="detail-btn">
+            <button class="btn btnShopping"><i>图标</i></button>
+            <button class="btn btnAddShopping" id="btnShopping">加入购物车</button>
+        </div>
+        <!-- 加入购物车 -->
+        <div class="dialog-wrap">
+        <div class="cart-dialog">
+             <!-- list -->
+                <div class="order order-edit">
+                    <ul>
+                        <li>
+                            <div class="weui-cells_checkbox">
+                                <div class="order-product">
+                                    <img src="../common/images/product/detial1.png">
+                                    <p class="title">优质纯牛奶</p>
+                                    <p class="content">巴氏杀菌，新鲜原滋味.</p>
+                                   <!--  <p class="price"><i>¥38</i> /瓶 <strong>合计：</strong><em>￥266</em></p> -->
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>日配数量：</span>
+                            <div class="edit num">
+                                <a href="javascript:;" class="disable">-</a>
+                                <a href="javascript:;">1</a>
+                                <a href="javascript:;">+</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span>配送频率：</span>
+                            <div class="edit rate">
+                                <a href="javascript:;" class="active">每天送</a>
+                                <a href="javascript:;">隔天送</a>
+                                <a href="javascript:;">工作日送</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span>订购时长：</span>
+                            <div class="edit">
+                                <div class="weui-cell weui-cell_select">
+                                    <div class="weui-cell__bd">
+                                        <select class="weui-select" name="select1">
+                                            <option selected="" value="1">7天</option>
+                                            <option value="2">2天</option>
+                                            <option value="3">3天</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>起配日期：</span>
+                            <div class="edit">
+                                <div class="weui-cell weui-cell_select weui-cell-input">
+                                    <div class="weui-cell__bd">
+                                        <input class="weui-input" id="date" type="text" value="2017-01-16">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="weui-btn weui-btn_primary blue-bg" id="btnRecart">确定</a>
+                </div>          
+        </div>
+        <div class="cart-bg">
+        </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+        $("#date").calendar({
+            onChange: function (p, values, displayValues) {
+              console.log(values, displayValues);
+            }
+        });
+        $(".rate a").click(function(){
+            $(this).siblings().removeClass('active').end().addClass('active');
+        });
+        $("#btnShopping").click(function(){
+            $(".dialog-wrap").show();
+        });
+        $("#btnRecart").click(function(){
+            $(".dialog-wrap").hide();            
+        });
+        $(".cart-bg").click(function(){
+            $(".dialog-wrap").hide();            
+        });
+    </script>  
+</body>
+
+</html>
