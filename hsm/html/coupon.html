@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>华山牧-优惠券</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/public.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <!-- 返回 -->
+    <div class="return-last">
+        <img src="../common/images/array.jpg"> 优惠券
+    </div>
+    <!-- nav -->
+    <div class="home-nav coupon-nav">
+        <ul>
+            <li class="active">
+                <span>未使用</span>
+            </li>
+            <li>
+                <span>已使用</span>
+            </li>
+            <li>
+                <span>已过期</span>
+            </li>
+        </ul>
+    </div>
+    <div class="coupon">
+        <ul id="coupon0">
+            <li>
+                <div class="wrap">
+                    <div class="left">
+                        <em></em>
+                        <h1>5<i>元</i></h1>
+                        <p>请在2016-08-15前使用</p>
+                    </div>
+                    <div class="right">
+                        <em></em>
+                        <a href="javascript:;">未使用</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="wrap">
+                    <div class="left">
+                        <em></em>
+                        <h1>5<i>元</i></h1>
+                        <p>请在2016-08-15前使用</p>
+                    </div>
+                    <div class="right">
+                        <em></em>
+                        <a href="javascript:;">未使用</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="coupon1" class="gray">
+            <li>
+                <div class="wrap">
+                    <div class="left">
+                        <em></em>
+                        <h1>5<i>元</i></h1>
+                        <p>请在2016-08-15前使用</p>
+                    </div>
+                    <div class="right">
+                        <em></em>
+                        <a href="javascript:;">已使用</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="wrap">
+                    <div class="left">
+                        <em></em>
+                        <h1>5<i>元</i></h1>
+                        <p>请在2016-08-15前使用</p>
+                    </div>
+                    <div class="right">
+                        <em></em>
+                        <a href="javascript:;">已使用</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="coupon2" class="gray">
+            <li>
+                <div class="wrap">
+                    <div class="left">
+                        <em></em>
+                        <h1>5<i>元</i></h1>
+                        <p>请在2016-08-15前使用</p>
+                    </div>
+                    <div class="right">
+                        <em></em>
+                        <a href="javascript:;">已过期</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="wrap">
+                    <div class="left">
+                        <em></em>
+                        <h1>5<i>元</i></h1>
+                        <p>请在2016-08-15前使用</p>
+                    </div>
+                    <div class="right">
+                        <em></em>
+                        <a href="javascript:;">已过期</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(function(){
+            $(".coupon-nav li").click(function(){
+                var index = $(this).index();
+                $("#coupon"+index).show().siblings().hide();
+
+            });
+        });
+    </script>
+</body>
+
+</html>

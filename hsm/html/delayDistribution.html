@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>华山牧-延期配送设置</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/public.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <!-- 返回 -->
+    <div class="return-last">
+        <img src="../common/images/array.jpg"> 延期配送设置 
+    </div>
+    <!-- list -->
+    <div class="order order-edit delay">
+        <ul>
+            <li>
+                <div class="weui-cells_checkbox"> 
+                    <div class="order-product">
+                        <img src="../common/images/product/detial1.png">
+                        <p class="title">优质纯牛奶</p>
+                        <p class="content">巴氏杀菌，新鲜原滋味.</p>
+                        <p class="price"><i>¥38</i> /瓶 <strong>合计：</strong><em>￥266</em></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>日配数量：</span>
+                <div class="edit num">
+                    <a href="javascript:;" class="disable">-</a>
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">+</a>
+                </div>
+            </li>
+            <li>
+                <span>配送频率：</span>
+                <div class="edit rate">
+                    <a href="javascript:;" class="active">每天送</a>
+                    <a href="javascript:;">隔天送</a>
+                    <a href="javascript:;">工作日送</a>
+                </div>
+            </li>
+            <li>
+                <span>订购时长：</span>
+                <div class="edit">
+                    <div class="weui-cell weui-cell_select">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select1">
+                                <option selected="" value="1">7天</option>
+                                <option value="2">2天</option>
+                                <option value="3">3天</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>起配日期：</span>
+                <div class="edit">
+                    <div class="weui-cell weui-cell_select weui-cell-input">
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="date" type="text" value="2017-01-16">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="delay-tip">
+                <p>温馨提示：当日上午十点后进行延期修改，将于后天按修改后日期以及日配数量为您继续配送.</p>
+            </li>
+        </ul>
+    </div>
+    <p class="bottom-btn"><a href="deliveryAddress.html" class="weui-btn weui-btn_primary blue-bg">保存</a></p>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+        $("#date").calendar({
+            onChange: function (p, values, displayValues) {
+              console.log(values, displayValues);
+            }
+        });
+        $(".rate a").click(function(){
+            $(this).siblings().removeClass('active').end().addClass('active');
+        });
+    </script>  
+</body>
+
+</html>
