@@ -604,6 +604,9 @@ em,i{
 .order.submit ul li .weui-cell:before { 
     border-top: 0; 
 }
+.order.submit .coupon{
+    padding:0;
+}
 /*------------------------------- redeemCode.html -------------------------------*/
 .code{
     padding:20px;
@@ -800,7 +803,8 @@ em,i{
     border-top: 0; 
 }
 .address .weui-label { 
-    width: 80px; 
+    width: 90px; 
+    font-size:1.4rem;
 }
 .weui-switch-cp__input:checked~.weui-switch-cp__box, .weui-switch:checked {
     border-color: #0E3E81;
