@@ -28,111 +28,18 @@
     }
     rangeTest();
     </script> -->
+    
+	<p>《3D肉蒲团》上映前一个星期，片中女主角蓝燕(微博)被传失踪，甚至自杀。昨日现身首映式，所有谣言不攻自破。蓝燕对腾讯娱乐相当友好，直称我们是自己人。还特地留下来接受采访。在自己人面前，她主动提及"失踪传闻"是因为自己压力太大。</p>
+	<button id="button">选中一些文字，然后点击本按钮</button>
+	<script type="text/javascript" src="//cdn.bootcss.com/rangy/1.3.0/rangy-core.js"></script>
+	<script>
+	var oBtn = document.getElementById("button");
+	oBtn.onclick = function() {
+	    var sel = rangy.getSelection();
+	    alert(sel.toString());
+	};
+	</script>
 
-<style type="text/css">
-	.cparea{  
-    text-align: center;  
-    font-family: Microsoft Yahei;  
-    margin: -2em 0 0;  
-}  
-.kwd{  
-    display: inline-block;  
-    color: #272727;  
-    background-color: #fff;  
-    font-size: 1.1875em;  
-    font-size: 1.1875em;  
-    padding: .75em 1em;  
-    border: 1px dashed #e60012;  
-    -webkit-user-select:element;   
-    margin: 2em;  
-}  
-.kwd span{  
-    display: block;   
-    border: 1px solid #fff;  
-}  
-.kdes{  
-    display: inline-block;  
-    color: #212121;  
-    font-size: .875em;  
-    padding-top: 0;  
-}  
-.kdes b{  
-    color: #ed5353;  
-    font-size: 1.25em;  
-    padding-right: .1em;  
-}  
-</style>
-
-<div class=" para requirement">  
-    <div class="tips tips-t">  
-        1、必须首次下载才生效<br/>  
-        2、不能从排行榜下载哦  
-    </div>  
-    <div class="cparea">  
-        <div class="kwd" id="kwd"><span>三国艳义手机优化大师</span></div>                   
-    </div>  
-    <div class="cparea">  
-        <span class="kdes"><b>★</b>长按虚线框,拷贝关键词</span>  
-    </div>  
-    <a href="https://itunes.apple.com/cn/" data-role="button" class="downlink">去AppStore搜索下载</a>  
-</div>
-
-
-
-
-
-
-<script>
-$("#kwd").bind("taphold", function(){  
-    var doc = document,   
-        text = doc.getElementById("kwd"),  
-        range,   
-        selection;  
-    if (doc.body.createTextRange) { //IE  
-        range = document.body.createTextRange();  
-        range.moveToElementText(text);  
-        range.select();  
-  
-    } else if (window.getSelection) {   //FF CH SF  
-        selection = window.getSelection();          
-        range = document.createRange();  
-        range.selectNodeContents(text);  
-        selection.removeAllRanges();  
-        selection.addRange(range);  
-  
-        //测试  
-        console.log(text.textContent);  
-        text.innerText && console.log(text.innerText);  //FireFox不支持innerText  
-        console.log(text.textContent.length);  
-        text.innerText && console.log(text.innerText.length);   //在Chrome下长度比IE/FF下多1  
-        console.log(text.firstChild.textContent.length);  
-        text.innerText && console.log(text.firstChild.innerText.length);  
-        console.log(text.firstChild.innerHTML.length);  
-  
-        //注意IE9-不支持textContent  
-        makeSelection(0, text.firstChild.textContent.length, 0, text.firstChild);  
-        /* 
-        if(selection.setBaseAndExtent){ 
-            selection.selectAllChildren(text); 
-            selection.setBaseAndExtent(text, 0, text, 4); 
-        } 
-        */  
-    }else{  
-        alert("浏览器不支持长按复制功能");  
-    }  
-  
-});  
-function makeSelection(start, end, child, parent) {  
-    var range = document.createRange();  
-    //console.log(parent.childNodes[child]);  
-    range.setStart(parent.childNodes[child], start);  
-    range.setEnd(parent.childNodes[child], end);  
-  
-    var sel = window.getSelection();  
-    sel.removeAllRanges();  
-    sel.addRange(range);   
-}  
-</script>
 
 </body>
 
