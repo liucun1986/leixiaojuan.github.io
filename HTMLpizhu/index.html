@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> 批注添加 </title>
+  <meta http-equiv=content-type content="text/html; charset=gbk">
+  <link id="artDialogSkin" href="skin/facebook/facebook.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="artDialog.min.js"></script>
+  <script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+  <style type="text/css">
+	body {
+		font-size: 12px;
+	}
+	.content{
+		width: 400px;
+		height: 250px;
+		border: 1px #ddd solid;
+		padding: 5px;
+		margin-bottom: 5px;
+	}
+	.list {
+		border: 1px solid #ddd;
+		height: 350px;
+		width: 250px;
+	}
+	.list div {
+		border: 1px solid #ddd;
+		margin-bottom: 5px;
+		padding: 10px;
+		cursor: pointer;
+	}
+	/*css批注样式*/
+	.postil, .postilFocus {
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+		text-decoration: none;
+		cursor: default;
+	}
+	.postil {
+		background: yellow;
+	}
+	.postilFocus {
+		background: Tomato;
+	}
+	/*批注提示图标样式*/
+	.tipsIcon {
+		opacity: 0.80;
+		z-index: 1;
+		filter:alpha(opacity=80);
+	}
+  </style>
+  <script type="text/javascript" src="postil.js"></script>
+ </head>
+ 
+ <body>
+  <div id="icon" style="display: none; position: absolute;" title="添加批注"><img src="image/tips.png" class="tipsIcon"></div>
+  
+  <div class="content">
+  <span style="font-family:宋体;"><span style="font-size:12.0000pt;">由结果可知道：</span></span><br><span style="font-family:宋体;"><span style="font-size:12.0000pt;">&nbsp;（关键词：</span></span><span style="font-family:宋体;"><span style="font-size:12.0000pt;"><span style="color:rgb(255,0,0);">稳定、整洁、有序</span></span></span><span style="font-family:宋体;"><span style="font-size:12.0000pt;">）</span></span><br>&nbsp;&nbsp;<span style="font-family:宋体;"><span style="font-size:10.5000pt;">我最强的两个兴趣是</span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;"><span style="color:rgb(255,0,0);">常规型</span></span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;">和</span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;"><span style="color:rgb(255,0,0);">企业型</span></span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;">；最弱的兴趣是</span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;"><span style="color:rgb(255,0,0);">现实型</span></span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;">。我天生就是一个</span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;"><span style="color:rgb(0,0,0);">Organizer，让生活、世界变得更有秩序是我与生俱来的品质。1、我个性谨慎，做事讲求规矩和精确，热衷于各类事务性工作，乐于精心整理、安排、规划事务，在活动中往往体现顺从、细心、有条理、有耐性的特点，比较喜欢和文字、数据、资料打交道。</span></span></span><br><span style="font-family:宋体;"><span style="font-size:10.5000pt;"><span style="color:rgb(0,0,0);">2、</span></span></span><span style="font-family:宋体;"><span style="font-size:10.5000pt;"><span style="color:rgb(0,0,0);">我倾向于选择表现写、算技能的活动，对事务的运筹津津乐道，不嫌弃繁琐，也善于将繁琐的事务安排得井井有条并处于良好的控制之中。</span></span></span><br><span style="font-family:宋体;"><span style="font-size:10.5000pt;"><span style="color:rgb(0,0,0);">3<span style="font-family:宋体;">、做事习惯循规蹈矩，乐于照章办事，不愿打破常规，往往回避过于挑战性的工作，能欣然接受重复、单调。</span></span></span></span>&nbsp; <br>
+  </div>
+  <div class="list"></div>
+
+  <input type="button" value="加载批注" onclick="loader()" />
+ </body>
+</html>
