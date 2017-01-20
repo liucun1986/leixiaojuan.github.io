@@ -6,7 +6,7 @@
  */
 //初始化页面元素
 $(function(){
-	$(".content").touchend(function(e){
+	$(".content").mouseup(function(e){
 		var selectedText ;
 		if(window.getSelection) {
 			selectedText = window.getSelection().toString();
@@ -25,7 +25,7 @@ $(function(){
 			$("#icon").hide();
 		}
 	});
-	$("#icon").touchmove(function(){
+	$("#icon").hover(function(){
 		$(this).children().removeClass("tipsIcon");
 	}
 	,
