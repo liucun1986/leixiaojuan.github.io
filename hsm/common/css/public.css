@@ -63,9 +63,11 @@ i {
     height: 50px;
     line-height: 50px;
 }
-.hidden{
-    overflow:hidden;
+
+.hidden {
+    overflow: hidden;
 }
+
 
 /*------------------------------- home.html -------------------------------*/
 
@@ -205,10 +207,10 @@ i {
     font-size: 1.4rem;
     color: #929292;
     padding-bottom: 3%;
-    position:relative;
+    position: relative;
 }
 
-.home-list .tag{ 
+.home-list .tag {
     background-size: 80%;
     color: #fff;
     line-height: 27px;
@@ -218,12 +220,15 @@ i {
     width: 60px;
     padding-left: 10px;
 }
-.groom{
-    background: url(../images/home_label_red.png) no-repeat;    
+
+.groom {
+    background: url(../images/home_label_red.png) no-repeat;
 }
-.new{
-    background: url(../images/home_label_brown.png) no-repeat;    
+
+.new {
+    background: url(../images/home_label_brown.png) no-repeat;
 }
+
 .home-list ul li a {
     color: #929292;
 }
@@ -279,18 +284,19 @@ i {
     line-height: 40px;
     position: relative;
     background: #0E3E81;
+    width: 100%;
 }
 
 .return-last img {
     position: absolute;
     left: 10px;
     top: 10px;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
 }
 
 .return-last a {
-    color: #555;
+    color: #fff;
     position: absolute;
     right: 5%;
     top: 1px;
@@ -393,7 +399,7 @@ i {
 
 .detail-btn .btnShopping {
     width: 45% !important;
-    background:#946134 url(../images/shopping.png) no-repeat center center;
+    background: #946134 url(../images/shopping.png) no-repeat center center;
     display: inline-block;
     float: left;
     height: 50px;
@@ -475,9 +481,11 @@ i {
 .order {
     clear: both;
 }
-.shopping{
+
+.shopping {
     margin-bottom: 107px;
 }
+
 .order ul {
     margin-top: .5rem;
     background: #fff;
@@ -490,8 +498,9 @@ i {
     font-size: 1.4rem;
     border-bottom: 1px solid #f0f0f0;
 }
+
 .shopping .order-product {
-    width: 89%; 
+    width: 89%;
 }
 
 .order ul li span {
@@ -679,12 +688,12 @@ i {
     border-radius: 2px;
     color: #555;
     padding: 0 8px;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
-.order-edit .rate a.active { 
+.order-edit .rate a.active {
     color: #fff;
-    background:#0E3E81;
+    background: #0E3E81;
 }
 
 .order-edit .rate a:last-child {
@@ -712,7 +721,7 @@ i {
     font-size: 14px;
     height: 50px;
     line-height: 32px;
-    margin-top:6px;
+    margin-top: 6px;
 }
 
 .add-submit a p {
@@ -792,7 +801,7 @@ i {
     border-radius: 4px;
     height: 40px;
     line-height: 40px;
-    width:200px;
+    width: 200px;
 }
 
 
@@ -874,7 +883,7 @@ i {
 }
 
 .coupon ul li .left h1 {
-    color: #946134 ;
+    color: #946134;
     font-size: 3rem;
     font-weight: normal;
     padding-left: 10%;
@@ -1012,7 +1021,7 @@ i {
 .weui-switch-cp__input:checked~.weui-switch-cp__box,
 .weui-switch:checked {
     border-color: #946134;
-    background-color:#946134;
+    background-color: #946134;
 }
 
 .bottom-btn {
@@ -1021,6 +1030,7 @@ i {
     left: 0;
     width: 100%;
 }
+
 
 /*------------------------------- address.html -------------------------------*/
 
@@ -1033,6 +1043,10 @@ i {
     color: #929292;
     font-size: 1.4rem;
     margin-left: 5px;
+}
+
+.address-con .weui-cell__bd  { 
+    font-size: 1.4rem;
 }
 
 .address-con .weui-cell__bd p {
@@ -1176,8 +1190,8 @@ i {
 .order-con li.order-n {
     height: 40px;
     line-height: 40px;
-    width:100%;
-    overflow:hidden;
+    width: 100%;
+    overflow: hidden;
 }
 
 .order-con li.order-n a {
@@ -1263,160 +1277,184 @@ i {
 .order-con ul.order-stop li.order-f label {
     color: #946134;
 }
-.order ul li.order-f{ 
-    line-height: 40px; 
+
+.order ul li.order-f {
+    line-height: 40px;
 }
 
+
 /*------------------------------- my.html -------------------------------*/
-.user-con{
-    height:17rem;
-    padding-top:5rem;
-    width:100%;
-    background:url(../images/my_bg.png) no-repeat;
+
+.user-con {
+    height: 17rem;
+    padding-top: 5rem;
+    width: 100%;
+    background: url(../images/my_bg.png) no-repeat;
     background-size: 100% 100%;
-    color:#fff;
+    color: #fff;
 }
-.user-con .pic{    
+
+.user-con .pic {
     width: 80px;
     height: 80px;
     border-radius: 100%;
     padding: 3px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
-.user-con .pic img{
-    width:100%;
-    height:100%;
-    border-radius:100%;
-}
-.user-con .name{
-    font-size:1.6rem;
-    text-align: center;
-    margin:10px auto;
-}
-.user-con .num{
-    font-size:1.2rem;
-    text-align: center;
-}
-.user-warp{    
-    width:80px;
-    margin:0 auto;
-}
-.my-list{
 
+.user-con .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
 }
+
+.user-con .name {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.user-con .num {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.user-warp {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.my-list {}
+
 .my-list .weui-cell {
     padding: 15px 15px 15px 50px;
 }
 
-.my-list  p{
-    color:#1B1B1B;
+.my-list p {
+    color: #1B1B1B;
 }
-.my-list .weui-cell:before { 
-    border-top:0; 
-} 
-.my-list a{
+
+.my-list .weui-cell:before {
+    border-top: 0;
+}
+
+.my-list a {
     background-repeat: no-repeat;
     background-position: 10px center;
     border-bottom: 1px solid #f4f4f4;
-    font-size:1.4rem;
-    background-size:30px;
-}
-.my-list a:nth-child(1){
-    background-image:url(../images/my1.png) ;
-}
-.my-list a:nth-child(2){
-    background-image:url(../images/my2.png) ;
-}
-.my-list a:nth-child(3){
-    background-image:url(../images/my3.png) ;
-}
-.my-list a:nth-child(4){
-    background-image:url(../images/my4.png) ;
+    font-size: 1.4rem;
+    background-size: 30px;
 }
 
-/*------------------------------- bind.html -------------------------------*/
-.bind{
-    padding:5%;
+.my-list a:nth-child(1) {
+    background-image: url(../images/my1.png);
 }
+
+.my-list a:nth-child(2) {
+    background-image: url(../images/my2.png);
+}
+
+.my-list a:nth-child(3) {
+    background-image: url(../images/my3.png);
+}
+
+.my-list a:nth-child(4) {
+    background-image: url(../images/my4.png);
+}
+
+
+/*------------------------------- bind.html -------------------------------*/
+
+.bind {
+    padding: 5%;
+}
+
 .bind .weui-label {
     display: block;
     width: 80px;
     word-wrap: break-word;
     word-break: break-all;
 }
-.bind input{
-    font-size:1.6rem
+
+.bind input {
+    font-size: 1.6rem
 }
+
 .bind .weui-cells:before {
-    border-top: 0;  
+    border-top: 0;
 }
+
 .bind .weui-cell:before {
-    border-top: 0 !important;  
+    border-top: 0 !important;
 }
-.bind .weui-cells:after {    
+
+.bind .weui-cells:after {
     padding: 10px 0 0px 0;
     border-bottom: 1px solid #979797;
 }
-.bind .weui-cell {     
+
+.bind .weui-cell {
     padding: 10px 0 0px 0;
     border-bottom: 0;
 }
 
-.bind button.weui-vcode-btn { 
+.bind button.weui-vcode-btn {
     border-radius: 5px;
     background: #194786;
     color: #fff;
-    height:40px;
-    line-height:35px;
-    margin-top:6px;
-    font-size:1.4rem;
-} 
-.bind  .weui-cell__bd input{
-    height:40px; 
+    height: 40px;
+    line-height: 35px;
+    margin-top: 6px;
+    font-size: 1.4rem;
 }
-.bind  .weui-cell__bd input[type='tel']{ 
-    border-bottom:1px solid  #979797;
-        width: 90%;
-}
-.bind .weui-btn{
-    margin-top:40px;
-    border-radius:5px;
-}
-.weui-tabbar__icon{
-    background-size:22px 22px;
-    background-repeat:no-repeat;
-}
-.icon1{
-    background-image:url(../images/icon_nav_button.png);
-}
-.icon2{
-    background-image:url(../images/icon_nav_msg.png);
-}
-.icon3{
-    background-image:url(../images/icon_nav_article.png);
-}
-.icon4{
-    background-image:url(../images/icon_nav_cell.png);
-}
-.weui-bar__item--on .icon1{
-    background-image:url(../images/icon_nav_button-hover.png);
-}
-.weui-bar__item--on .icon2{
-    background-image:url(../images/icon_nav_msg-hover.png);
-}
-.weui-bar__item--on .icon3{
-    background-image:url(../images/icon_nav_article-hover.png);
-}
-.weui-bar__item--on .icon4{
-    background-image:url(../images/icon_nav_cell-hover.png);
-} 
 
+.bind .weui-cell__bd input {
+    height: 40px;
+}
 
+.bind .weui-cell__bd input[type='tel'] {
+    border-bottom: 1px solid #979797;
+    width: 90%;
+}
 
+.bind .weui-btn {
+    margin-top: 40px;
+    border-radius: 5px;
+}
 
+.weui-tabbar__icon {
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+}
 
+.icon1 {
+    background-image: url(../images/icon_nav_button.png);
+}
 
+.icon2 {
+    background-image: url(../images/icon_nav_msg.png);
+}
 
+.icon3 {
+    background-image: url(../images/icon_nav_article.png);
+}
 
+.icon4 {
+    background-image: url(../images/icon_nav_cell.png);
+}
 
+.weui-bar__item--on .icon1 {
+    background-image: url(../images/icon_nav_button-hover.png);
+}
 
+.weui-bar__item--on .icon2 {
+    background-image: url(../images/icon_nav_msg-hover.png);
+}
+
+.weui-bar__item--on .icon3 {
+    background-image: url(../images/icon_nav_article-hover.png);
+}
+
+.weui-bar__item--on .icon4 {
+    background-image: url(../images/icon_nav_cell-hover.png);
+}
