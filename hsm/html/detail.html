@@ -164,7 +164,7 @@
                             <div class="edit">
                                 <div class="weui-cell weui-cell_select weui-cell-input">
                                     <div class="weui-cell__bd">
-                                        <input class="weui-input" id="date" type="text" value="2017-01-16">
+                                        <input class="weui-input" id="date" type="text" value="">
                                     </div>
                                 </div>
                             </div>
@@ -180,6 +180,7 @@
     <script>
         $(function() {
             FastClick.attach(document.body);
+            $("#date").val(getNowFormatDate());
         });
         $("#date").calendar({
             onChange: function (p, values, displayValues) {
@@ -198,6 +199,21 @@
         $(".cart-bg").click(function(){
             $(".dialog-wrap").hide();            
         });
+        function getNowFormatDate() {
+            var date = new Date();
+            var seperator1 = "-";
+            var seperator2 = ":";
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+            return currentdate;
+        }
     </script>  
 </body>
 

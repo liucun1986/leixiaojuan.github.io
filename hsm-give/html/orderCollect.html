@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>订单汇总</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/public.js"></script>
+    <!-- 送奶端 -->
+    <link rel="stylesheet" href="../common/css/give.css" />
+</head>
+
+<body ontouchstart class="body-gray">
+
+      <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+          <label for="" class="weui-label">省份</label>
+        </div>
+        <div class="weui-cell__bd">
+          <select class="weui-select" name="select2">
+            <option value="1">陕西省</option>
+            <option value="2">甘肃省</option> 
+          </select>
+        </div>
+      </div>
+      <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+          <label for="" class="weui-label">城市</label>
+        </div>
+        <div class="weui-cell__bd">
+          <select class="weui-select" name="select2">
+            <option value="1">西安市</option>
+            <option value="2">咸阳市</option> 
+          </select>
+        </div>
+      </div>
+      <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+          <label for="" class="weui-label">区</label>
+        </div>
+        <div class="weui-cell__bd">
+          <select class="weui-select" name="select2">
+            <option value="1">雁塔区</option>
+            <option value="2">新城区</option> 
+          </select>
+        </div>
+      </div>
+      <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+          <label for="" class="weui-label">街道</label>
+        </div>
+        <div class="weui-cell__bd">
+          <select class="weui-select" name="select2">
+            <option value="1">科技二路</option>
+            <option value="2">高新六路</option> 
+          </select>
+        </div>
+      </div>
+      <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+          <label for="" class="weui-label">小区</label>
+        </div>
+        <div class="weui-cell__bd">
+          <select class="weui-select" name="select2">
+            <option value="1">零壹广场</option>
+            <option value="2">软件园</option> 
+          </select>
+        </div>
+      </div>
+    <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+            <label for="date1" class="weui-label">开始时间</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" id="date1" type="text">
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+            <label for="date2" class="weui-label">结束时间</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" id="date2" type="text">
+        </div>
+    </div>
+    <script>
+    $(function() {
+        FastClick.attach(document.body);
+        var date = getNowFormatDate();
+        $("#date1").val(getNowFormatDate());
+        $("#date2").val(getNowFormatDate());
+    });
+    </script>
+    <script>
+    $("#date1").calendar({
+        onChange: function(p, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+    $("#date2").calendar({
+        onChange: function(p, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+    </script>
+</body>
+
+</html>

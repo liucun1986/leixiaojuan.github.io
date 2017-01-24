@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>今日配送</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/public.js"></script>
+    <!-- 送奶端 -->
+    <link rel="stylesheet" href="../common/css/give.css" />
+</head>
+
+<body ontouchstart class="body-gray">
+    <!-- 返回 -->
+    <div class="return-last">
+        <img src="../common/images/array.jpg"> 今日配送
+    </div>
+    <div class="today">
+        <div class="tab">
+            <a href="javascript:void(0)" class="active">待配送</a>
+            <a href="javascript:void(0)">已配送</a>
+        </div>
+    </div>
+    <div class="today-con">
+        <!-- 待配送 -->
+        <ul id="tab1">
+            <li>
+                <h1>雁塔区、科技二路</h1>
+                <div class="con">
+                    <p>产品名称：传世经典凝固型酸奶</p>
+                    <p>日配数量：2瓶</p>
+                    <p>收货人：孟莹</p>
+                    <p>联系电话：13201577572</p>
+                    <p>收获地址：陕西省、西安市、雁塔区、科技二路零壹广场72号、西安软件园7楼</p>
+                </div>
+                <div class="address">
+                    <div class=" weui-cells_form">
+                        <div class="weui-cell weui-cell_switch">
+                            <div class="weui-cell__bd">设为默认</div>
+                            <div class="weui-cell__ft">
+                                <label for="switchCP" class="weui-switch-cp">
+                                    <input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked">
+                                    <div class="weui-switch-cp__box"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h1>雁塔区、科技二路</h1>
+                <div class="con">
+                    <p>产品名称：传世经典凝固型酸奶</p>
+                    <p>日配数量：2瓶</p>
+                    <p>收货人：孟莹</p>
+                    <p>联系电话：13201577572</p>
+                    <p>收获地址：陕西省、西安市、雁塔区、科技二路零壹广场72号、西安软件园7楼</p>
+                </div>
+                <div class="address">
+                    <div class=" weui-cells_form">
+                        <div class="weui-cell weui-cell_switch">
+                            <div class="weui-cell__bd">设为默认</div>
+                            <div class="weui-cell__ft">
+                                <label for="switchCP" class="weui-switch-cp">
+                                    <input id="switchCP" class="weui-switch-cp__input" type="checkbox" >
+                                    <div class="weui-switch-cp__box"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- 已配送 --> 
+        <ul id="tab2" class=" already">
+            <li>
+                <h1>雁塔区、科技二路</h1>
+                <div class="con">
+                    <p>产品名称：传世经典凝固型酸奶</p>
+                    <p>日配数量：2瓶</p>
+                    <p>收货人：孟莹</p>
+                    <p>联系电话：13201577572</p>
+                    <p>收获地址：陕西省、西安市、雁塔区、科技二路零壹广场72号、西安软件园7楼</p>
+                </div> 
+            </li>
+            <li>
+                <h1>雁塔区、科技二路</h1>
+                <div class="con">
+                    <p>产品名称：传世经典凝固型酸奶</p>
+                    <p>日配数量：2瓶</p>
+                    <p>收货人：孟莹</p>
+                    <p>联系电话：13201577572</p>
+                    <p>收获地址：陕西省、西安市、雁塔区、科技二路零壹广场72号、西安软件园7楼</p>
+                </div> 
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(".tab a").click(function(){
+            var index = $(this).index()+1;
+            $("#tab"+index).show().siblings().hide(); 
+            $(this).addClass('active').siblings().removeClass('active'); 
+        });
+    </script>
+</body>
+
+</html>

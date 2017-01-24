@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>起止时间</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/public.js"></script>
+    <!-- 送奶端 -->
+    <link rel="stylesheet" href="../common/css/give.css" />
+</head>
+
+<body ontouchstart class="body-gray">
+    <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+            <label for="date1" class="weui-label">开始时间</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" id="date1" type="text">
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_select weui-cell_select-after time">
+        <div class="weui-cell__hd">
+            <label for="date2" class="weui-label">结束时间</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" id="date2" type="text">
+        </div>
+    </div>
+    <script>
+    $(function() {
+        FastClick.attach(document.body);
+        var date = getNowFormatDate();
+        $("#date1").val(getNowFormatDate());
+        $("#date2").val(getNowFormatDate());
+    });
+    </script>
+    <script>
+    $("#date1").calendar({
+        onChange: function(p, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+    $("#date2").calendar({
+        onChange: function(p, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+    </script>
+</body>
+
+</html>

@@ -24,13 +24,13 @@
         <a href="javascript:;">编辑</a>
     </div>
     <!-- list -->
-    <div class="order shopping">
+    <div class="order shopping" id="list">
         <ul>
             <li>
                 <div class="weui-cells_checkbox">
                     <label class="weui-check__label" for="s11">
                         <div class="weui-cell__hd">
-                            <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
                             <i class="weui-icon-checked"></i>
                         </div>
                     </label>
@@ -64,7 +64,7 @@
                 <div class="weui-cells_checkbox">
                     <label class="weui-check__label" for="s12">
                         <div class="weui-cell__hd">
-                            <input type="checkbox" class="weui-check" name="checkbox1" id="s12" checked="checked">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="s12">
                             <i class="weui-icon-checked"></i>
                         </div>
                     </label>
@@ -97,9 +97,9 @@
     <!-- 结算 -->
     <div class="order-settle">
         <div class="weui-cells_checkbox">
-            <label class="weui-check__label" for="s13">
+            <label class="weui-check__label" for="s13" id="all">
                 <div class="weui-cell__hd">
-                    <input type="checkbox" class="weui-check" name="checkbox1" id="s13" checked="checked">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s13">
                     <i class="weui-icon-checked"></i>
                 </div>
             </label>
@@ -111,26 +111,41 @@
     <!-- 底部导航 -->
     <div class="weui-tabbar">
         <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
-            <div class="weui-tabbar__icon icon1"> 
+            <div class="weui-tabbar__icon icon1">
             </div>
             <p class="weui-tabbar__label">首页</p>
         </a>
         <a href="#tab2" class="weui-tabbar__item">
-            <div class="weui-tabbar__icon icon2"> 
+            <div class="weui-tabbar__icon icon2">
             </div>
             <p class="weui-tabbar__label">订单</p>
         </a>
-        <a href="#tab3" class="weui-tabbar__item"> 
-            <div class="weui-tabbar__icon icon3"> 
+        <a href="#tab3" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon icon3">
             </div>
             <p class="weui-tabbar__label">购物车</p>
         </a>
         <a href="#tab4" class="weui-tabbar__item">
-            <div class="weui-tabbar__icon icon4"> 
+            <div class="weui-tabbar__icon icon4">
             </div>
             <p class="weui-tabbar__label">我的</p>
         </a>
     </div>
+    <script>
+    $("#s13").click(function() {
+    　　// 使用attr只能执行一次
+    　　$("input[name='checkbox1']").attr("checked", $(this).attr("checked")); 
+    
+    　　// 使用prop则完美实现全选和反选
+    　　$("input[name='checkbox1']").prop("checked", $(this).prop("checked"));
+
+　　　　// 获取所有选中的项并把选中项的文本组成一个字符串
+    　　var str = '';
+    　　$($("input[name='checkbox1']:checked")).each(function(){
+        　　str += $(this).next().text() + ',';
+    　　});
+    }); 
+    </script>
 </body>
 
 </html>
