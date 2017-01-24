@@ -1,3 +1,7 @@
+@charset "utf-8";
+* {
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Microsoft Yahei', "微软雅黑", STHeiti, "华文细黑", 'STHeitiSC-Light', 'Arial', 'Hiragino Sans GB', sans-serif;
+}
 body,
 html {
     height: 100%;
