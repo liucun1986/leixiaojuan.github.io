@@ -63,7 +63,7 @@ i {
     background: #0E3E81 !important;
     color: #fff;
     border-radius: 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     height: 50px;
     line-height: 50px;
 }
@@ -304,7 +304,7 @@ i {
     position: absolute;
     right: 5%;
     top: 1px;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .swiper-container.detail {
@@ -596,7 +596,7 @@ i {
     background: #fff;
     width: 100%;
     height: 50px;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #000;
 }
 
@@ -712,17 +712,17 @@ i {
 }
 
 .order-settle.submit em {
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #9F9F9F;
 }
 
 .order-settle.submit button {
     width: 26%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .add-submit {
-    font-size: 14px;
+    font-size: 1.4rem;
     height: 50px;
     line-height: 32px;
     margin-top: 6px;
@@ -731,7 +731,9 @@ i {
 .add-submit a p {
     color: #555;
 }
-
+.order.submit{
+    margin-bottom:52px;
+}
 .order.submit .order-product img {
     margin: 0 0.8rem;
 }
@@ -782,7 +784,7 @@ i {
 .code {
     padding: 20px;
     color: #929292;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 20px;
 }
 
@@ -801,7 +803,7 @@ i {
 }
 
 .code .blue-bg {
-    font-size: 14px;
+    font-size: 1.4rem;
     border-radius: 4px;
     height: 40px;
     line-height: 40px;
@@ -1463,4 +1465,22 @@ i {
 
 .weui-bar__item--on .icon4 {
     background-image: url(../images/icon_nav_cell-hover.png);
+}
+
+.line{
+    margin:0px 10px;
+    color:#ddd;
+    display:inline;
+    height:20px;
+    width:1px;
+    border-left:1px solid #ddd;
+}
+.right{
+    text-align:right;
+}
+.pad-ty{
+    padding-right:20px;
+}
+.blue{
+    color:#0E3E81;
 }
