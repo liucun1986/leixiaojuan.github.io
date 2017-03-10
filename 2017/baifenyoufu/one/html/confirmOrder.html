@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>爱马哥-确认订单</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <div class="order">
+        <!-- 返回 -->
+        <div class="return-last">
+            <a href="javascript:history.go(-1)"><img src="../common/images/icon/back_icon.png"></a>
+            确认订单
+        </div>
+        <!-- 地址 -->
+        <div class="order-address">
+            <!-- 无地址时 -->
+            <p class="create" style="display: none;"><a href="createAddress.html">您还未添加地址</a></p>
+            <!-- 有地址时 -->
+            <div class="has-address">
+                <a href="address.html">
+                    <p class="tels"><span>小花花</span> <span>13201577572</span> </p>
+                    <p class="floor">北京市 腾讯北京分公司腾讯大楼五楼</p>
+                </a>
+            </div>
+        </div>
+        <!-- 列表 -->
+        <div class="order-list">
+            <ul>
+                <li>
+                    <div class="order-wrap">
+                        <img src="../common/images/product/detail.png" class="product">
+                        <div class="con">
+                            <p class="c1">Lipton立顿黄牌精选红茶包 斯里兰卡红茶</p>
+                            <p class="c2">
+                                <label>自取</label>
+                                <label>少放糖，温热</label>
+                            </p>
+                            <p class="c3">
+                                <label class="pull-left">¥33.9</label>
+                                <span class="pull-right">X1</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="order-wrap">
+                        <img src="../common/images/product/detail.png" class="product">
+                        <div class="con">
+                            <p class="c1">Lipton立顿黄牌精选红茶包 斯里兰卡红茶</p>
+                            <p class="c2">
+                                <label>自取</label>
+                                <label>少放糖，温热</label>
+                            </p>
+                            <p class="c3">
+                                <label class="pull-left">¥33.9</label>
+                                <span class="pull-right">X1</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="order-wrap">
+                        <img src="../common/images/product/detail.png" class="product">
+                        <div class="con">
+                            <p class="c1">Lipton立顿黄牌精选红茶包 斯里兰卡红茶</p>
+                            <p class="c2">
+                                <label>自取</label>
+                                <label>少放糖，温热</label>
+                            </p>
+                            <p class="c3">
+                                <label class="pull-left">¥33.9</label>
+                                <span class="pull-right">X1</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 送达时间 -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label for="name" class="weui-label">送达时间</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="job" type="text" value="">
+                </div>
+            </div>
+        </div>
+        <!-- 配送方式 -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label for="name" class="weui-label">配送方式</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="send" type="text" value="">
+                </div>
+            </div>
+        </div>
+        <!-- 留言 -->
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input text-left" type="text" placeholder="选填：（给商家留言）">
+                </div>
+            </div>
+        </div>
+        <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+        </script>
+        <script src="../js/jquery-weui.js"></script>
+        <script>
+        var arr = '[{title: "立即送达",value: 1}, {title: "11:30",value: 2}, {title: "当天内送达",value: 3}]';
+        $("#job").select({
+            title: "选择送达时间",
+            items: eval('(' + arr + ')')
+        });
+        $("#send").select({
+            title: "选择配送方式",
+            items: [{
+                title: "自取",
+                value: 1
+            }, {
+                title: "送货",
+                value: 3
+            }]
+        });
+        </script>
+        <!-- 确认 -->
+        <div class="confirm-btn">
+            <span class="btn btnCount">
+            <label>合计：</label>
+            <i>33.9元</i>
+        </span>
+            <a href="order.html" class="btn btnConfirm">去结算</a>
+            <!-- <button class="btn btnConfirm">确 认</button> -->
+        </div>
+    </div>
+</body>
+
+</html>

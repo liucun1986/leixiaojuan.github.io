@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>爱马哥-订单详情</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/order.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <div class="order-detail">
+        <!-- 返回 -->
+        <div class="return-last">
+            <a href="javascript:history.go(-1)"><img src="../common/images/icon/back_icon.png"></a>
+            订单详情
+        </div>
+        <!-- 收获信息 -->
+        <div class="address"> 
+            <p class="title"><label>小花花</label> <label>13201577572</label></p>  
+            <p>北京市 腾讯北京分公司腾讯大楼五楼</p> 
+        </div>
+        <!-- 商品信息 -->
+        <div class="orders-list ">
+            <ul>
+                <li>
+                    <div class="list">
+                        <dl>
+                            <dd>
+                                <img src="../common/images/product/detail.png" class="photo">
+                                <div class="con">
+                                    <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                    <p>规格：<em>¥18</em>X<i>3</i></p>
+                                    <p class="text-right">合计：<em>¥54</em></p>
+                                </div>
+                            </dd>
+                            <dd>
+                                <img src="../common/images/product/detail.png" class="photo">
+                                <div class="con">
+                                    <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                    <p>规格：<em>¥18</em>X<i>3</i></p>
+                                    <p class="text-right">合计：<em>¥54</em></p>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- *******************************已接单******************************* -->
+        <div>
+            <div class="weui-cells weui-cells_form m-t-ten weui-no">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">送达时间：</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>立即送达</label>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">配送方式：</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>自取</label> 
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells weui-cells_form m-t-ten weui-no">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <label>给商家留言：咖啡少放糖、红茶多放糖</label>
+                    </div>
+                </div> 
+            </div>
+            <!-- 订单信息 -->
+            <div class="weui-cells__title">订单信息</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">订单编号</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>12345751512652</label>
+                    </div>
+                </div> 
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">致电商家</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>029－85138967</label>
+                        <a href="tel:029－85138967" class="tel"></a>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">下单时间</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>2017－02-06</label>
+                        <span class="type1">已接单</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 骑手信息 -->
+            <div class="weui-cells__title">骑手信息</div>
+            <div class="weui-cells weui-cells_form m-b-ten">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">姓名</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>孟程程</label>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">联系电话</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>13201577772</label>
+                        <a href="tel:13201577772" class="tel"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- *******************************已接单******************************* -->
+        <!-- *******************************未接单******************************* -->
+        <div style="display: none;">
+            <!-- 订单信息 -->
+            <div class="weui-cells__title">订单信息</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">订单编号</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>12345751512652</label>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">致电商家</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>029－85138967</label>
+                        <a href="tel:029－85138967" class="tel"></a>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">下单时间</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <label>2017－02-06</label>
+                        <span class="type2">未接单</span>
+                    </div>
+                </div>
+            </div>
+            <p class="bottom-btn"><a href="javascript:void(0)" class="weui-btn weui-btn_primary blue-bg">取消订单</a></p>
+        </div>
+        <!-- *******************************未接单******************************* -->
+    </div>
+</body>
+
+</html>

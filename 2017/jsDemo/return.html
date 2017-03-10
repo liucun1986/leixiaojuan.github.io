@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+	<script type="text/javascript">
+		function login() {
+			var user = 'lxj',
+				pwd = '123456';
+			if (user == 'lxj' && pwd == '123456') {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		if(login()){
+			console.log('登录成功');
+		} else {
+			console.log('登录失败');
+		}
+
+		$.holdReady(true);
+		$(function(){
+			alert(123);
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

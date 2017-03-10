@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>我的订单-商家</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/order.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <div class="home-tab">
+        <ul class="home-ul">
+            <li class="active">
+                <a href="javascript:void(0)">待接单</a>
+            </li>
+            <li><a href="javascript:void(0)">未完成</a></li>
+            <li>
+                <a href="javascript:void(0)">已完成</a>
+            </li>
+        </ul>
+    </div>
+    <div class="orders-list">
+        <div class="orders1">
+            <div class="orders-list rider-list">
+                <ul>
+                    <li>
+                        <h1 class="time">
+                            <label>下单时间：2017-02-06 04:18</label>
+                            <span>待接单</span>
+                        </h1>
+                        <div class="list">
+                            <a href="javascript:void(0)">
+                                <dl>
+                                    <dd>
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                        <div class="con">
+                                            <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                            <p>规格：<i>¥18X3</i></p>
+                                            <p class="text-right">实付：<em>¥54</em></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </a>
+                            <div class="weui-cells detail">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">配送方式：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>送货</label>
+                                    </div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">期望时间：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>立即送达</label>
+                                    </div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">配送地址：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>罗西（女士）&nbsp;&nbsp;北京市 腾讯大楼五楼会议室&nbsp;&nbsp;18237865829</label>
+                                    </div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">备注：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>少加糖</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list weui-cells detail">
+                            <div class="weui-cell select-cell">
+                                <div class="weui-cell__hd">
+                                    <label class="weui-label">骑手信息：</label>
+                                </div>
+                                <div class="weui-cell__bd order-bus">
+                                    <input class="weui-input" id="user" type="text" value="李四">
+                                </div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd">
+                                    <label class="weui-label">联系电话：</label>
+                                </div>
+                                <div class="weui-cell__bd text-right">
+                                    <label>13201257472</label>
+                                </div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd btn-line">
+                                    <a href="javascript:void(0)" class="weui-btn weui-btn_mini weui-btn_default">取消订单</a>
+                                    <a href="orderBusinessSuccess.html" class="weui-btn weui-btn_mini weui-btn_primary">确认接单</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h1 class="time">
+                            <label>下单时间：2017-02-06 04:18</label>
+                            <span>待接单</span>
+                        </h1>
+                        <div class="list">
+                            <a href="javascript:void(0)">
+                                <dl>
+                                    <dd>
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                        <div class="con">
+                                            <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                            <p>规格：<i>¥18X3</i></p>
+                                            <p class="text-right">实付：<em>¥54</em></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </a>
+                            <div class="weui-cells detail">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">期望时间：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>立即送达</label>
+                                    </div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">配送地址：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>罗西（女士）&nbsp;&nbsp;北京市 腾讯大楼五楼会议室&nbsp;&nbsp;18237865829</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list weui-cells detail">
+                            <div class="weui-cell select-cell">
+                                <div class="weui-cell__hd">
+                                    <label class="weui-label">骑手信息：</label>
+                                </div>
+                                <div class="weui-cell__bd order-bus">
+                                    <input class="weui-input" id="user2" type="text" value="李四">
+                                </div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd">
+                                    <label class="weui-label">联系电话：</label>
+                                </div>
+                                <div class="weui-cell__bd text-right">
+                                    <label>13201257472</label>
+                                </div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd btn-line">
+                                    <a href="javascript:void(0)" class="weui-btn weui-btn_mini weui-btn_default">取消订单</a>
+                                    <a href="orderBusinessSuccess.html" class="weui-btn weui-btn_mini weui-btn_primary">确认接单</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 未完成 -->
+        <div class="orders2">
+            <div class="orders-list rider-list">
+                <ul>
+                    <li>
+                        <h1 class="time">
+                            <label>下单时间：2017-02-06 04:18</label>
+                            <span>配送中</span>
+                        </h1>
+                        <div class="list">
+                            <a href="javascript:void(0)">
+                                <dl>
+                                    <dd>
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                        <div class="con">
+                                            <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                            <p>规格：<i>¥18X3</i></p>
+                                            <p class="text-right">实付：<em>¥54</em></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </a>
+                            <div class="weui-cells detail">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">期望时间：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>立即送达</label>
+                                    </div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">配送地址：</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <label>罗西（女士）&nbsp;&nbsp;北京市 腾讯大楼五楼会议室&nbsp;&nbsp;18237865829</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list weui-cells detail">
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd">
+                                    <label class="weui-label">骑手信息：</label>
+                                </div>
+                                <div class="weui-cell__bd text-right">
+                                    <label>张鑫</label>
+                                </div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__hd">
+                                    <label class="weui-label">联系电话：</label>
+                                </div>
+                                <div class="weui-cell__bd text-right">
+                                    <label>13201257472</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 已完成 -->
+        <div class="orders3">
+            <ul>
+                <li class="off">
+                    <h1 class="time">
+                        <label>2017-02-06</label>
+                        <span>已完成</span>
+                    </h1>
+                    <div class="list">
+                        <a href="orderBusinessDetail.html">
+                            <dl>
+                                <dd>
+                                    <img src="../common/images/product/detail.png" class="photo">
+                                    <div class="con">
+                                        <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                        <p>规格：<em>¥18</em>X<i>3</i></p>
+                                        <p class="text-right">合计：<em>¥54</em></p>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <img src="../common/images/product/detail.png" class="photo">
+                                    <div class="con">
+                                        <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                        <p>规格：<em>¥18</em>X<i>3</i></p>
+                                        <p class="text-right">合计：<em>¥54</em></p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                </li>
+                <li class="off">
+                    <h1 class="time">
+                        <label>2017-02-06</label>
+                        <span>已完成</span>
+                    </h1>
+                    <div class="list">
+                        <a href="orderBusinessDetail.html">
+                            <dl>
+                                <dd>
+                                    <img src="../common/images/product/detail.png" class="photo">
+                                    <div class="con">
+                                        <p class="c1">美国进口starbucks/星巴克咖啡</p>
+                                        <p>规格：<em>¥18</em>X<i>3</i></p>
+                                        <p class="text-right">合计：<em>¥54</em></p>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 是否有新的数据 -->
+    <div class="order-tip"></div>
+    <script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+    </script>
+    <script src="../js/jquery-weui.js"></script>
+    <script>
+    // var arr = '[{title: "立即送达",value: 1}, {title: "11:30",value: 2}, {title: "当天内送达",value: 3}]';
+    // $("#job").select({
+    //     title: "选择送达时间",
+    //     items: eval('(' + arr + ')')
+    // });
+    // 
+    // $("#user").select({
+    //     title: "李四三",
+    //     items: [{
+    //         title: "张三三",
+    //         value: 1
+    //     }, {
+    //         title: "李四",
+    //         value: 3
+    //     }]
+    // });
+    // $("#user2").select({
+    //     title: "李四三",
+    //     items: [{
+    //         title: "张三三",
+    //         value: 1
+    //     }, {
+    //         title: "李四",
+    //         value: 3
+    //     }]
+    // });
+    $(".list .weui-input").select({
+        title: "李四三",
+        items: [{
+            title: "张三三",
+            value: 1
+        }, {
+            title: "李四",
+            value: 3
+        }]
+    });
+    
+    </script>
+</body>
+
+</html>

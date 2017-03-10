@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>爱马哥</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/index.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <!-- 搜索 -->
+    <header class="search">        
+        <a href="search.html">
+            <input type="text" name="" value="" placeholder="请输入要搜索的内容..." class="search-txt">
+        </a>
+        <input type="button" name="" value="搜索" class="link-btn font-white">
+    </header>
+    <!-- tab分类 | 查询条件-->
+    <div class="home-tab">
+        <img src="../common/images/icon/retrieval_icon.png" class="retrieval">
+        <ul class="home-ul">
+            <li class="active"><a href="javascript:void(0)">礼品</a></li>
+            <li>
+                <a href="javascript:void(0)">饮品</a>
+            </li>
+        </ul>
+        <div class="home-tab-con">
+            <div class="tab-con-wrap tab1">
+                <dl>
+                    <dd class="up">
+                        <span>销量<i>由低到高</i><em></em></span>
+                    </dd>
+                    <dd class="up">
+                        <span>价格<i>由低到高</i><em></em></span>
+                    </dd>
+                </dl>
+                <h1 class="tab-title">
+                    分类
+                </h1>
+                <div class="tab-type">
+                    <span>毛绒玩具</span>
+                    <span>时尚礼品</span>
+                    <span>手工艺品</span>
+                    <span>小挂件</span>
+                    <span>摆件</span>
+                </div>
+                <p class="tab-submit">
+                    <input type="button" value="提交">
+                </p>
+            </div>
+            <div class="tab-con-wrap tab2">
+                <dl>
+                    <dd class="up">
+                        <span>销量<i>由低到高</i><em></em></span>
+                    </dd>
+                    <dd class="up">
+                        <span>价格<i>由低到高</i><em></em></span>
+                    </dd>
+                </dl>
+                <h1 class="tab-title">
+                    分类
+                </h1>
+                <div class="tab-type">
+                    <span>奶茶</span>
+                    <span>拿铁</span>
+                    <span>纯奶</span>
+                    <span>可乐</span>
+                    <span>葡萄汁</span>
+                </div>
+                <p class="tab-submit">
+                    <input type="button" value="提交">
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 内容列表 -->
+    <div class="home-list">
+        <ul>
+            <li>
+                <div class="groom-wrap"></div>
+                <a href="detail.html">
+                    <img src="../common/images/product/home1.jpg">
+                    <p>QQ迷你公仔经典款</p>
+                    <p class="price">¥39</p>
+                </a>
+            </li>
+            <li class="groom">
+                <div class="groom-wrap"></div>
+                <a href="detail.html">
+                    <img src="../common/images/product/home1.jpg">
+                    <p>QQ迷你公仔经典款</p>
+                    <p class="price">¥39</p>
+                </a>
+            </li>
+            <li>
+                <div class="groom-wrap"></div>
+                <a href="detail.html">
+                    <img src="../common/images/product/home1.jpg">
+                    <p>QQ迷你公仔经典款</p>
+                    <p class="price">¥39</p>
+                </a>
+            </li>
+            <li>
+                <div class="groom-wrap"></div>
+                <a href="detail.html">
+                    <img src="../common/images/product/home1.jpg">
+                    <p>QQ迷你公仔经典款</p>
+                    <p class="price">¥39</p>
+                </a>
+            </li>
+            <li>
+                <div class="groom-wrap"></div>
+                <a href="detail.html">
+                    <img src="../common/images/product/home1.jpg">
+                    <p>QQ迷你公仔经典款</p>
+                    <p class="price">¥39</p>
+                </a>
+            </li>
+            <li>
+                <div class="groom-wrap"></div>
+                <a href="detail.html">
+                    <img src="../common/images/product/home1.jpg">
+                    <p>QQ迷你公仔经典款</p>
+                    <p class="price">¥39</p>
+                </a>
+            </li>
+        </ul>    
+    </div>
+    <!-- 购物车 --> 
+    <a href="shoppingCart.html" class="home-cart">
+        <img src="../common/images/icon/shopping_btn.png">
+        <span>9</span>
+    </a>
+    <!-- 底部导航 -->
+    <div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item weui-bar__item--on">
+            <div class="weui-tabbar__icon icon1"> 
+            </div>
+            <p class="weui-tabbar__label">商城</p>
+        </a>
+        <a href="order.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon icon2"> 
+            </div>
+            <p class="weui-tabbar__label">订单</p>
+        </a>
+        <a href="my.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon icon3"> 
+            </div>
+            <p class="weui-tabbar__label">我的</p>
+        </a>
+    </div>
+
+<div class="weui-loadmore" style="margin-bottom: 60px;">
+  <i class="weui-loading"></i>
+  <span class="weui-loadmore__tips">正在加载</span>
+</div>
+
+  <!-- 其他内容 -->
+  <script type="text/javascript">
+        var loading = false;  //状态标记
+        $(document.body).infinite().on("infinite", function() {
+            $(".weui-loadmore").show();
+          if(loading) return;
+          loading = true;
+          setTimeout(function() {
+            // $("#list").append("<p> 我是新加载的内容 </p>");
+            loading = false;
+            $(document.body).destroyInfinite();
+            $(".weui-loadmore").hide();
+            $(document.body).infinite(100);
+          }, 1500);   //模拟延迟
+        });
+  </script>
+
+</body>
+
+</html>

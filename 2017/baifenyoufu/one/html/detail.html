@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>爱马哥-商品详情</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/detail.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <!-- 返回 -->
+    <div class="return-last">
+        <a href="javascript:history.go(-1)"><img src="../common/images/icon/back_icon.png"></a>
+        商品详情
+    </div>
+    <div class="detail-wrap">
+        <!-- 滚动 -->
+        <div class="swiper-container detail">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../common/images/product/detail.png" /></div>
+                <div class="swiper-slide"><img src="../common/images/product/detail.png" /></div>
+                <div class="swiper-slide"><img src="../common/images/product/detail.png" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+        $(".swiper-container").swiper({
+            loop: true,
+            autoplay: 3000
+        });
+        </script>
+        <div class="detail-con">
+            <p class="title">Lipton立顿黄牌精选红茶包 斯里兰卡红茶叶袋泡茶正品 100包200g</p>
+            <p class="tag">本品采用精选红茶，保证每份原料的健康，纯正本品采用精选红茶。</p>
+            <p class="price">¥ 33.90</p>
+        </div>
+        <h1 class="detail-title"><span>商品详情</span></h1>
+        <div class="detail-con">
+            <p class="con">本品采用精选红茶，保证每份原料的健康，纯正本品采用精选红茶，保证每份原料的健康，纯正本品采用精选红茶，保证每份原料的健康，纯正本品采用精选红茶，保证每份原料的健康，纯正本品采用精选红茶，保证每份原料的健康，确保纯正本品采用精选红茶，保证每份原料的健康，纯正……本品采用精选红茶，保证每份原料的健康，纯正本品采用精选红茶，保证每份原料的健康，纯正本品采用精选红茶，保证每份原料的健康，纯正……</p>
+        </div>
+    </div>
+    <div class="detail-tip" style="display: none;">该商品已下架</div>
+    <div class="detail-btn">
+        <a href="javascript:void(0)" class="btn btn-add">加入购物车</a>
+        <a href="javascript:void(0)" class="btn btn-order">立即购买</a>
+    </div>
+    <!-- 弹出层 -->
+    <div class="dialog-wrap">
+        <div class="bg"></div>
+        <div class="dialog-con">
+            <div class="detail-cart">
+                <p class="pic">
+                    <img src="../common/images/product/detail.png">
+                    <label>¥33.9</label>
+                </p>
+                <div class="detail-cart-con">
+                    <div class="cart-num">
+                        <span class="pull-left">购买数量</span>
+                        <span class="pull-right">
+                            <input type="button" name="" value="-" class="min">
+                            <input type="number" name="" value="1" pattern="[0-9]*" class="num">
+                            <input type="button" name="" value="+" class="add">
+                        </span>
+                    </div>
+                </div>
+                <p>
+                    <!-- 如果点击的是“加入购物车”按钮，则此处是“加入购物车”功能操作 -->
+                    <!-- <a href="javascript:;" class="weui-btn weui-btn_primary confirm">确 定</a> -->
+                    <!-- 如果点击的是“立即购买”按钮，则此处是“立即购买”功能操作，并且跳转到订单提交页面 -->
+                    <a href="confirmOrder.html" class="weui-btn weui-btn_primary confirm">确 定</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

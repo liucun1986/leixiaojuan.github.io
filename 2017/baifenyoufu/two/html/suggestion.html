@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>我的北分</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script type="text/javascript" src="../common/js/public.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <div class="home-tab">
+        <ul class="home-ul">
+            <li class="active"><a href="javascript:void(0)">我的意见</a></li>
+            <li>
+                <a href="javascript:void(0)">我有意见</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <!-- 我的意见 -->
+        <div class="sug sug1" style="display: block;">
+            <!-- 暂无意见 -->
+            <div style="display: none;">
+                <p class="sug-pic">
+                    <img src="../common/images/icon/bg.png">
+                </p>
+                <p class="sug-tip">您还没有写评论哦~</p>
+                <p>
+                    <a href="javascript:void(0)" class="weui-btn weui-btn_primary sug-write">
+                        <i class="write"></i> 写评论
+                    </a>
+                </p>
+            </div>
+            <!-- 意见列表 -->
+            <div>
+                <ul class="sug-list">
+                    <li>
+                        <div class="con">
+                            <h1>
+                            <span class="pull-left">还没有想好标题，肿么办</span>
+                            <span class="pull-right">2017-01-22</span>
+                        </h1>
+                            <p>
+                                个人觉得还是很不错的，有些地方……
+                            </p>
+                        </div>
+                        <p class="sug-btn text-right">
+                            <a href="javascript:void(0)" class="link icon-delete">删除</a>
+                            <a href="javascript:void(0)" class="link icon-reply active">未回复</a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="con">
+                            <a href="suggestionDetail.html">
+                            <h1>
+                                <span class="pull-left">还没有想好标题，肿么办</span>
+                                <span class="pull-right">2017-01-22</span>
+                            </h1>
+                            <p>
+                                个人觉得还是很不错的，有些地方……
+                            </p>
+                            </a>
+                        </div>
+                        <p class="sug-btn text-right">
+                            <a href="javascript:void(0)" class="link icon-delete">删除</a>
+                            <a href="javascript:void(0)" class="link icon-reply">已回复</a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="con">
+                            <a href="suggestionDetail.html">
+                            <h1>
+                                <span class="pull-left">还没有想好标题，肿么办</span>
+                                <span class="pull-right">2017-01-22</span>
+                            </h1>
+                            <p>
+                                个人觉得还是很不错的，有些地方……
+                            </p>
+                            </a>
+                        </div>
+                        <p class="sug-btn text-right">
+                            <a href="javascript:void(0)" class="link icon-delete">删除</a>
+                            <a href="javascript:void(0)" class="link icon-reply">已回复</a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="con">
+                            <a href="suggestionDetail.html">
+                            <h1>
+                                <span class="pull-left">还没有想好标题，肿么办</span>
+                                <span class="pull-right">2017-01-22</span>
+                            </h1>
+                            <p>
+                                个人觉得还是很不错的，有些地方……
+                            </p>
+                            </a>
+                        </div>
+                        <p class="sug-btn text-right">
+                            <a href="javascript:void(0)" class="link icon-delete">删除</a>
+                            <a href="javascript:void(0)" class="link icon-reply">已回复</a>
+                        </p>
+                    </li>
+                </ul>
+                <img src="../common/images/icon/comments_btn.png" class="sug-write">
+            </div>
+        </div>
+        <!-- 我有意见 -->
+        <div class="sug sug2">
+            <div class="weui-cells">
+                <div class="weui-cell select-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">意见类型：</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" id="user" type="text" value="请选择">
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells sug-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">标题：</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" id="11" type="text" value="" placeholder="请输入标题…">
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">意见：</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" placeholder="请输入您的意见…"></textarea>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <a href="javascript:void(0)" class="weui-btn weui-btn_primary">
+                提交
+            </a>
+            </p>
+        </div>
+    </div>
+    <script>
+    $("#user").select({
+        title: "",
+        items: [{
+            title: "行政",
+            value: 1
+        }, {
+            title: "服务",
+            value: 3
+        }, {
+            title: "商城",
+            value: 4
+        }]
+    });
+    $(function(){
+        $(".sug-write").click(function(){
+            $('.home-ul li:last-child').siblings().removeClass('active').end().addClass('active');
+            $('.sug2').siblings().hide().end().show();
+        });;
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>爱马哥-购物车</title>
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
+    <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
+    <link rel="stylesheet" href="../common/css/public.css" />
+    <script src="../Plugin/JqueryWeUI/lib/jquery-2.1.4.js"></script>
+    <script src="../Plugin/JqueryWeUI/lib/fastclick.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/jquery-weui.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/swiper.min.js"></script>
+    <script src="../Plugin/JqueryWeUI/js/city-picker.min.js"></script>
+    <script src="../common/js/detail.js"></script>
+</head>
+
+<body ontouchstart class="body-gray">
+    <div class="shopping">
+        <!-- 返回 -->
+        <div class="return-last">
+            <a href="javascript:history.go(-1)"><img src="../common/images/icon/back_icon.png"></a>
+            购物车
+            <span class="edit">编辑</span>
+            <!-- 当为编辑时，展示下面的 -->
+            <!-- <span class="edit">完成</span> -->
+        </div>
+        <div class="orders-list shopping-list">
+            <ul>
+                <li>
+                    <h1 class="time">
+                        <label>2017-02-06</label> 
+                    </h1>
+                    <div class="list">
+                        <dl>
+                            <dd>
+                                <div class="weui-cells weui-cells_checkbox">
+                                    <label class="weui-cell" for="s12">
+                                        <input type="checkbox" class="weui-check" name="s12" id="s12">
+                                        <i class="weui-icon-checked"></i>
+                                    </label>
+                                    <a href="detail.html" class="shopping-pic">
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                    </a>
+                                    <div class="con">
+                                        <p class="c1">
+                                            <a href="detail.html">美国进口starbucks/星巴克咖啡</a>
+                                        </p>
+                                        <p><em>¥54.00</em></p>
+                                        <p class="text-right cart-num">
+                                            <input type="button" name="" value="-" class="min">
+                                            <input type="number" name="" value="1" pattern="[0-9]*" class="num">
+                                            <input type="button" name="" value="+" class="add">
+                                        </p>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div class="weui-cells weui-cells_checkbox">
+                                    <label class="weui-cell" for="s12">
+                                        <input type="checkbox" class="weui-check" name="s12" id="s12">
+                                        <i class="weui-icon-checked"></i>
+                                    </label>
+                                    <a href="detail.html" class="shopping-pic">
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                    </a>
+                                    <div class="con">
+                                        <p class="c1">
+                                            <a href="detail.html">美国进口starbucks/星巴克咖啡</a>
+                                        </p>
+                                        <p><em>¥54.00</em></p>
+                                        <p class="text-right cart-num">
+                                            <input type="button" name="" value="-" class="min">
+                                            <input type="number" name="" value="1" pattern="[0-9]*" class="num">
+                                            <input type="button" name="" value="+" class="add">
+                                        </p>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="off">
+                    <h1 class="time">
+                        <label>2017-02-06</label> 
+                    </h1>
+                    <div class="list">
+                        <dl>
+                            <dd>
+                                <div class="weui-cells weui-cells_checkbox">
+                                    <label class="weui-cell" for="s12">
+                                        <input type="checkbox" class="weui-check" name="s12" id="s12">
+                                        <i class="weui-icon-checked"></i>
+                                    </label>
+                                    <a href="detail.html" class="shopping-pic">
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                    </a>
+                                    <div class="con">
+                                        <p class="c1">
+                                            <a href="detail.html">美国进口starbucks/星巴克咖啡</a>
+                                        </p>
+                                        <p><em>¥54.00</em></p>
+                                        <p class="text-right cart-num">
+                                            <input type="button" name="" value="-" class="min">
+                                            <input type="number" name="" value="1" pattern="[0-9]*" class="num">
+                                            <input type="button" name="" value="+" class="add">
+                                        </p>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h1 class="time">
+                        <label>2017-02-06</label> 
+                    </h1>
+                    <div class="list">
+                        <dl>
+                            <dd>
+                                <div class="weui-cells weui-cells_checkbox">
+                                    <label class="weui-cell" for="s12">
+                                        <input type="checkbox" class="weui-check" name="s12" id="s12">
+                                        <i class="weui-icon-checked"></i>
+                                    </label>
+                                    <a href="detail.html" class="shopping-pic">
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                    </a>
+                                    <div class="con">
+                                        <p class="c1">
+                                            <a href="detail.html">美国进口starbucks/星巴克咖啡</a>
+                                        </p>
+                                        <p><em>¥54.00</em></p>
+                                        <p class="text-right cart-num">
+                                            <input type="button" name="" value="-" class="min">
+                                            <input type="number" name="" value="1" pattern="[0-9]*" class="num">
+                                            <input type="button" name="" value="+" class="add">
+                                        </p>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div class="weui-cells weui-cells_checkbox">
+                                    <label class="weui-cell" for="s12">
+                                        <input type="checkbox" class="weui-check" name="s12" id="s12">
+                                        <i class="weui-icon-checked"></i>
+                                    </label>
+                                    <a href="detail.html" class="shopping-pic">
+                                        <img src="../common/images/product/detail.png" class="photo">
+                                    </a>
+                                    <div class="con">
+                                        <p class="c1">
+                                            <a href="detail.html">美国进口starbucks/星巴克咖啡</a>
+                                        </p>
+                                        <p><em>¥54.00</em></p>
+                                        <p class="text-right cart-num">
+                                            <input type="button" name="" value="-" class="min">
+                                            <input type="number" name="" value="1" pattern="[0-9]*" class="num">
+                                            <input type="button" name="" value="+" class="add">
+                                        </p>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 确认 -->
+        <div class="confirm-btn">
+            <div class="weui-cells weui-cells_checkbox">
+                <label class="weui-cell weui-check__label" for="all">
+                    <div class="weui-cell__hd">
+                        <input type="checkbox" class="weui-check" name=" " id="all">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>全选</p>
+                    </div>
+                </label>
+                <!-- 当为编辑时，展示下面的 -->
+                <!-- <label>合计：</label>
+                <i>33.9元</i> -->
+            </div>
+            <!-- <a href="javascript:void(0)" class="btn btnConfirm">删 除</a>             -->
+            <!-- 当为编辑时，展示下面的 -->
+            <a href="confirmOrder.html" class="btn btnConfirm">去结算</a>
+        </div>
+    </div>
+</body>
+
+</html>
