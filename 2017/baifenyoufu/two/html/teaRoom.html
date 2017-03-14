@@ -124,10 +124,12 @@
             // $(".sug"+index).siblings().hide().end().show();
         });
         $(".tea-right ").delegate("a", "click", function() {
+            $("body").addClass('hidden');
             $(".tea-dialog").show();
-            $(".tea-dialog a").click(function() {
-                $(".tea-dialog").hide();
-            });
+        });
+        $(".tea-dialog a").click(function() {
+            $(".tea-dialog").hide();
+            $("body").removeClass('hidden');
         });
         $(".evaluate i").click(function() {
             var index = $(this).index() + 2;

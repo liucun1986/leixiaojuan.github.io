@@ -69,6 +69,11 @@ i {
     overflow: hidden;
 }
 
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+
 
 /* 字体颜色 */
 
@@ -114,6 +119,10 @@ i {
 
 .m-t-ten {
     margin-top: 5px;
+}
+
+.p-r-no {
+    padding-right: 0 !important;
 }
 
 .weui-no.weui-cells:before,
@@ -690,6 +699,7 @@ a.icon-reply.active {
 
 .tea .tea-right ul li .pic {
     width: 100%;
+    height: 9rem;
     border-radius: 5px 5px 0 0;
 }
 
@@ -707,6 +717,16 @@ a.icon-reply.active {
     color: #fff;
     width: 100%;
     margin-bottom: 5px;
+}
+
+.tea .tea-right ul li a i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/like.png) no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 3px;
 }
 
 .tea .tea-right ul li .wrap {
@@ -730,7 +750,7 @@ a.icon-reply.active {
 .tea-dialog {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
@@ -818,20 +838,22 @@ a.icon-reply.active {
 }
 
 .supper-week {
-    width: 60px;
+    width: 70px;
     text-align: left;
     background: url(../images/icon/down.png) no-repeat center right;
     background-size: 23px;
+    font-size: 1.4rem;
 }
 
 .supper-address {
     position: absolute;
     right: 3%;
     top: 13px;
-    width: 60px;
+    width: 70px;
     text-align: right;
     background: url(../images/icon/add.png) no-repeat center left;
     background-size: 23px;
+    font-size: 1.4rem;
 }
 
 .supper-tab {
@@ -847,7 +869,7 @@ a.icon-reply.active {
     border-bottom: 1px solid #F7F7F7;
     white-space: nowrap;
     overflow: auto;
-    width: 500px;
+    width: 100%;
 }
 
 .supper-tab ul li {
@@ -879,3 +901,443 @@ a.icon-reply.active {
     line-height: 30px;
     padding: 0 3%;
 }
+
+
+/*------------------------------- gym.html -------------------------------*/
+
+.gym li {
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.gym li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.gym1 {
+    background: url(../images/product/pic1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.gym2 {
+    background: url(../images/product/pic2.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/*------------------------------- gymIndex.html -------------------------------*/
+
+.gym-type {
+    height: 44px;
+    line-height: 44px;
+    font-size: 1.6rem;
+    color: #1B1B1B;
+    padding: 0 5%;
+    background: #fff url(../images/icon/down_blue.png) no-repeat 98% center;
+    background-size: 30px;
+}
+
+.gym-wrap {
+    background: #fff;
+    margin-top: 5px;
+    padding: 8px;
+    overflow: auto;
+}
+
+.gym-title {
+    font-size: 1.6rem;
+    color: #1B1B1B;
+    padding-left: 10px;
+    border-left: 2px solid #3190E8;
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+.gym-index-list {
+    margin-top: 10px;
+}
+
+.gym-index-list li {
+    width: 48%;
+    position: relative;
+    float: left;
+    margin-right: 2%;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.gym-index-list li video {
+    width: 100%;
+    height: 115px;
+    border-radius: 10px;
+}
+
+.gym-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 121px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gym-video p {
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 18px;
+}
+
+.gym-video img {
+    width: 30px;
+    margin-top: 40px;
+}
+
+.view-all {
+    display: block;
+    text-align: right;
+    background: url(../images/icon/back.png) no-repeat center right;
+    background-size: 18px;
+    font-size: 1.4rem;
+    color: #909090;
+    padding-right: 20px;
+    clear: both;
+    line-height: 30px;
+}
+
+.gym-course li {
+    border-top: 1px solid #f7f7f7;
+    padding: 10px 0;
+    clear: both;
+    font-size: 1.4rem;
+    color: #909090;
+    overflow: auto;
+    position: relative;
+}
+
+.gym-course li .pic {
+    width: 8.5rem;
+    height: 7rem;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.gym-course li h1 {
+    color: #1B1B1B;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+
+.gym-course li p {
+    line-height: 25px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gym-course li .yy {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    z-index: 99;
+}
+
+
+/*------------------------------- courseList.html -------------------------------*/
+
+.course-title {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.course-title span {
+    padding: 0 30px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.course-title em {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.course-title .btn-left {
+    background: url(../images/icon/left_icon.png) no-repeat;
+    background-size: 100%;
+}
+
+.course-title .btn-right {
+    background: url(../images/icon/right_icon.png) no-repeat;
+    background-size: 100%;
+}
+
+
+/*------------------------------- videoList.html -------------------------------*/
+
+.gym-video-list {
+    padding: 10px;
+}
+
+.gym-video-list li {
+    margin-bottom: 10px;
+    position: relative;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.00) 0%, #000000 96%);
+    border-radius: 6px;
+}
+
+.gym-video-list li a {
+    display: inline-block;
+    color: #fff;
+}
+
+.gym-video-list li video {
+    height: 14.5rem;
+    width: 100%;
+}
+
+.gym-video-list .video-time {
+    position: absolute;
+    bottom: 10px;
+    background: url(../images/icon/player_big_icon.png) no-repeat 10px 0px;
+    background-size: 40px;
+    padding-left: 60px;
+}
+
+.gym-video-list .video-time h1 {
+    font-size: 1.6rem;
+}
+
+.gym-video-list .video-time p {
+    font-size: 1.2rem;
+}
+
+
+/*------------------------------- evaluation.html -------------------------------*/
+
+.eval {
+    width: 100%;
+    height: 100%;
+    background: url(../images/icon/white_bear_bg.png) no-repeat;
+    background-size: contain;
+}
+
+.eval p {
+    position: absolute;
+    bottom: 10%;
+    padding: 0 10%;
+    width: 80%;
+}
+
+.eval p a {
+    opacity: 0.74;
+    border-radius: 6px;
+}
+
+.eval p a.weui-btn_primary {
+    background: #3190E8;
+}
+
+.eval p a.weui-btn_plain-primary {
+    border: 1px solid #3190E8;
+    color: #3190E8
+}
+
+
+/*------------------------------- mmpt.html -------------------------------*/
+
+.mmpt {
+    padding: 10px;
+    font-size: 1.4rem;
+    color: #909090;
+}
+
+.mmpt .tip {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.mmpt-list .weui-cell {
+    padding: 10px 6px;
+}
+
+.mmpt-list .weui-cells {
+    background: #FFFFFF;
+    border: 0 solid #EEEEEE;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.mmpt-list .weui-cells:before,
+.mmpt-list .weui-cells:after {
+    border: 0;
+}
+
+.mmpt-list .weui-cell:before {
+    left: 0;
+}
+
+.mmpt-list h1 {
+    font-size: 1.4rem;
+}
+
+.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before {
+    content: '\EA06';
+    color: #3190E8;
+}
+
+.mmpt-list li {
+    margin-bottom: 15px;
+}
+
+.weui-btn-auto {
+    background: #3190E8;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.mmpt-btn {
+    padding: 30px 0;
+}
+
+
+/*------------------------------- mmptSuccess.html -------------------------------*/
+
+.mmpt-icon {
+    height: 40px;
+    padding: 55% 0 0px 0;
+    margin: 5px 0;
+    text-align: center;
+    color: #333;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    background: #fff url(../images/icon/bg_icon.png) no-repeat center center;
+    background-size: 47%;
+}
+
+.mmtp-success .tip {
+    border: 0;
+}
+
+
+/*------------------------------- mmptOnline.html -------------------------------*/
+
+.mmpt-online .tip {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.mmpt-online .mmpt {
+    border-bottom: 5px solid #F7F7F7;
+}
+
+.mmpt-on-con {
+    padding: 5% 10%;
+    font-size: 1.4rem;
+}
+
+.mmpt-on-con .header {
+    display: flex;
+}
+
+.mmpt-on-con .header li {
+    width: 50%;
+    border: 1px solid #3190E8;
+    color: #3190E8;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 1.4rem;
+}
+
+.mmpt-on-con .header li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.mmpt-on-con .header li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.mmpt-on-con .header li.active {
+    background: #3190E8;
+    color: #fff;
+}
+
+.mmpt-on-con p {
+    margin: 20px 0 5px 0;
+    line-height: 40px;
+    height: 40px;
+    padding-left: 35px;
+    background: url(../images/icon/rtx_icon.png) no-repeat left center;
+    background-size: 25px;
+}
+
+.mmpt-on-con input {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.mmpt-on-con .up input {
+    background:none;
+}
+
+.mmpt-on-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mmpt-on-con .down p {
+    background: url(../images/icon/time_icon.png) no-repeat left center;
+    background-size: 25px;
+}
+
+.mmpt-on-con  input {
+    background: url(../images/icon/down_blue.png) no-repeat 97% center;
+    background-size: 24px;
+}
+
+.con2 {
+    display: none;
+}
+
+
+/*------------------------------- physiotherapy.html -------------------------------*/
+.mmpt-on-con.phy p{
+    margin-top:0;
+}
+.phy{
+    background:#fff;
+    margin-bottom:7px;
+}
+
+.mmpt-on-con .project p {
+    background: url(../images/icon/project_icon.png) no-repeat left center;
+    background-size: 25px;
+}
+.mmpt-on-con .address p {
+    background: url(../images/icon/address_icon.png) no-repeat left center;
+    background-size: 25px;
+}
+

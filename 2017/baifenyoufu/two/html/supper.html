@@ -149,18 +149,20 @@
         // 头部导航
         $(".supper-tab ul li").click(function() {
             var index = $(this).index() + 1;
-            $(this).siblings().removeClass('active').end().addClass('active'); 
+            $(this).siblings().removeClass('active').end().addClass('active');
         });
-    
+
         $(".tea-left li").click(function() {
             var index = $(this).index() + 1;
-            $(this).siblings().removeClass('active').end().addClass('active'); 
+            $(this).siblings().removeClass('active').end().addClass('active');
         });
         $(".tea-right ").delegate("a", "click", function() {
+            $("body").addClass('hidden');
             $(".tea-dialog").show();
-            $(".tea-dialog a").click(function() {
-                $(".tea-dialog").hide();
-            });
+        });
+        $(".tea-dialog a").click(function() {
+            $(".tea-dialog").hide();
+            $("body").removeClass('hidden');
         });
         $(".evaluate i").click(function() {
             var index = $(this).index() + 2;
