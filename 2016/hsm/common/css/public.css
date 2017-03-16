@@ -1636,17 +1636,17 @@ i {
     height:177px;
 }*/
 .picker-calendar-week-days {
-    height: 30px;
+    height: 40px;
     padding-top: 5px;
 }
 .picker-calendar-row {
-    height:30px !important;
+    height:40px !important;
 }
 .weui-picker-calendar {
-    height: 247px;
+    height: 290px;
 }
 .weui-picker-calendar .picker-modal-inner {
-    height: 247px;
+    height: 300px;
 }
 .picker-calendar-week-days+.picker-calendar-months {
     height: 227px;
@@ -1658,13 +1658,13 @@ i {
     height: 222px;
 }
 .picker-calendar-month-picker .current-month-value, .picker-calendar-month-picker .current-year-value, .picker-calendar-year-picker .current-month-value, .picker-calendar-year-picker .current-year-value {
-    height: 30px;
+    height: 40px;
     font-size: 1.4rem;
     line-height: 40px;
 }
 .picker-calendar-month-picker a.icon-only, .picker-calendar-year-picker a.icon-only {
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     font-size: 1.4rem;
 }
 .picker-calendar-week-days .picker-calendar-week-day { 
