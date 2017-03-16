@@ -1635,9 +1635,6 @@ i {
 .picker-calendar-month {
     height:177px;
 }*/
-.toolbar .toolbar-inner {
-    height: 35px;
-}
 .picker-calendar-week-days {
     height: 30px;
     padding-top: 5px;
@@ -1673,4 +1670,13 @@ i {
 .picker-calendar-week-days .picker-calendar-week-day { 
     line-height: 25px; 
     font-size: 1.4rem;
+}
+.picker-calendar-month-picker, .picker-calendar-year-picker {
+    line-height: 35px;
+}
+.toolbar .toolbar-inner {
+    height: 35px !important;
+}
+.picker-calendar-week-days {
+    height: 30px;
 }
