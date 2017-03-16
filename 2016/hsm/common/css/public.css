@@ -1613,7 +1613,7 @@ i {
 }
 
 // 日历控件
-.toolbar .toolbar-inner {
+/*.toolbar .toolbar-inner {
     height: 30px;
 }
 .picker-calendar-week-days {
@@ -1634,4 +1634,29 @@ i {
 }
 .picker-calendar-month {
     height:177px;
+}*/
+.toolbar .toolbar-inner {
+    height: 30px;
+}
+.picker-calendar-week-days {
+    height: 30px;
+    padding-top: 5px;
+}
+.picker-calendar-row {
+    height:30px !important;
+}
+.weui-picker-calendar {
+    height: 240px;
+}
+.weui-picker-calendar .picker-modal-inner {
+    height: 247px;
+}
+.picker-calendar-week-days+.picker-calendar-months {
+    height: 227px;
+}
+.picker-calendar-months-wrapper { 
+    height: 300px; 
+}
+.picker-calendar-month {
+    height: 222px;
 }
