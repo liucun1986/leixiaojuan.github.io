@@ -1672,7 +1672,7 @@ i {
     font-size: 1.4rem;
 }
 .picker-calendar-month-picker, .picker-calendar-year-picker {
-    line-height: 35px;
+    line-height: 35px !important;
 }
 .toolbar .toolbar-inner {
     height: 35px !important;
