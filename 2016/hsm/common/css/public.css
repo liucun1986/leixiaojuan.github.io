@@ -1,7 +1,8 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 * {
     font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Microsoft Yahei', "微软雅黑", STHeiti, "华文细黑", 'STHeitiSC-Light', 'Arial', 'Hiragino Sans GB', sans-serif;
 }
+
 body,
 html {
     height: 100%;
@@ -169,11 +170,15 @@ i {
     background: url(../images/nav-line.jpg) no-repeat right center;
 }
 
+.home-nav ul li span a {
+    color: #555555;
+}
+
 .home-nav ul li:last-child span {
     background: none;
 }
 
-.home-nav ul li.active span {
+.home-nav ul li.active span a {
     color: #0D3E81;
 }
 
@@ -263,10 +268,12 @@ i {
 .home-list ul li .home-list-sold {
     padding: 0 10px 0 4%;
     overflow: auto;
+    font-size: 1.2rem;
 }
 
 .home-list ul li .home-list-sold .sold-num {
     line-height: 20px;
+    font-size: 1.2rem;
 }
 
 .home-list ul li .home-list-sold .sold-num i {
@@ -274,7 +281,7 @@ i {
 }
 
 .home-list ul li .home-list-sold .sold-num i strong {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 
@@ -292,19 +299,19 @@ i {
 }
 
 .return-last img {
-    position: absolute;
-    left: 10px;
-    top: 10px;
     width: 20px;
     height: 20px;
 }
 
 .return-last a {
-    color: #fff;
+    /*color: #fff;
     position: absolute;
     right: 5%;
     top: 1px;
-    font-size: 1.4rem;
+    font-size: 1.4rem;*/
+    position: absolute;
+    left: 10px;
+    top: 5px;
 }
 
 .swiper-container.detail {
@@ -458,7 +465,7 @@ i {
 
 .cart-dialog .order-product img {
     float: left;
-    width: 9.9rem;
+    width: 9rem;
     height: 9.4rem;
     margin-top: -50px;
     margin-right: 1rem;
@@ -487,6 +494,10 @@ i {
 }
 
 .shopping {
+    margin-bottom: 107px;
+}
+
+#submitOrder {
     margin-bottom: 107px;
 }
 
@@ -541,7 +552,7 @@ i {
 
 .order-product img {
     float: left;
-    width: 9.9rem;
+    width: 9rem;
     height: 9.4rem;
     margin-right: 1rem;
 }
@@ -575,8 +586,8 @@ i {
 
 .order-product strong {
     color: #000000;
-    padding-left: 3%;
-    font-size: 1.4rem;
+    padding-left: 2%;
+    font-size: 1.2rem;
 }
 
 .order-product strong {
@@ -585,7 +596,7 @@ i {
 
 .order-product em {
     color: #0e3e81;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .order-settle {
@@ -596,7 +607,7 @@ i {
     background: #fff;
     width: 100%;
     height: 50px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #000;
 }
 
@@ -704,6 +715,21 @@ i {
     margin-right: 20px;
 }
 
+.order-edit .num input {
+    display: inline-block;
+    margin-right: 3%;
+    height: 22px;
+    line-height: 22px;
+    width: 30px;
+    text-align: center;
+    background: #F5F5F5;
+    border-radius: 2px;
+    color: #555;
+    padding: 0 8px;
+    font-size: 1.2rem;
+    border: none;
+}
+
 
 /*------------------------------- submitorder.html -------------------------------*/
 
@@ -719,6 +745,7 @@ i {
 .order-settle.submit button {
     width: 26%;
     font-size: 1.4rem;
+    border: 0;
 }
 
 .add-submit {
@@ -731,9 +758,11 @@ i {
 .add-submit a p {
     color: #555;
 }
-.order.submit{
-    margin-bottom:52px;
+
+#order-info {
+    margin-bottom: 52px;
 }
+
 .order.submit .order-product img {
     margin: 0 0.8rem;
 }
@@ -768,6 +797,10 @@ i {
 
 .order.submit ul li.coupon {
     height: 50px;
+}
+
+.order.submit ul li a.weui-cell {
+    padding: 0 15px;
 }
 
 .order.submit ul li .weui-cell:before {
@@ -853,6 +886,16 @@ i {
     top: 30px;
 }
 
+.coupon ul li .wrap strong {
+    display: inline-block;
+    color: #555;
+    font-weight: normal;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-left: 5%;
+    color: #888;
+}
+
 .coupon ul li .right {
     width: 40%;
     float: left;
@@ -871,6 +914,21 @@ i {
     border-radius: 2px;
     margin: 30px auto 0 auto;
     font-size: 1.4rem;
+}
+
+.coupon ul li .right button {
+    width: 78px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: #765232;
+    color: #fff;
+    display: block;
+    border-radius: 2px;
+    margin: 30px auto 0 auto;
+    font-size: 1.4rem;
+    box-shadow: none;
+    border: 0;
 }
 
 .coupon ul li .right em {
@@ -1031,7 +1089,7 @@ i {
 }
 
 .bottom-btn {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1050,10 +1108,12 @@ i {
     font-size: 1.4rem;
     margin-left: 5px;
 }
- .weui-cell__bd  { 
+
+.weui-cell__bd {
     font-size: 1.4rem;
 }
-.address-con .weui-cell__bd  { 
+
+.address-con .weui-cell__bd {
     font-size: 1.4rem;
 }
 
@@ -1062,6 +1122,7 @@ i {
     display: inline-block;
     float: left;
     font-size: 1.4rem;
+    text-align: left;
 }
 
 .address-con .weui-cell__bd span {
@@ -1110,6 +1171,25 @@ i {
 
 .address-con .weui-cells {
     margin-top: 0;
+}
+
+.address-con .operate .weui-cell {
+    width: 60%;
+}
+
+.address-con .operate {
+    /*position: relative;*/
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    padding-right: 20px;
+    border-top: 1px solid #F5F5F5
+}
+
+.address-con .operate .operate-btn {
+    position: absolute;
+    right: 5%;
+    top: 8px;
 }
 
 
@@ -1179,7 +1259,12 @@ i {
 
 .order-con ul li.order-gray {
     background: #F4F4F4;
-    height: 113px;
+    min-height: 113px;
+    height:auto;
+    border-bottom:1px solid #e1e1e1;
+}
+.order-con ul li.order-gray .weui-cells_checkbox{
+    overflow:auto;
 }
 
 .order-con .order-product {
@@ -1288,6 +1373,7 @@ i {
 
 .order ul li.order-f {
     line-height: 40px;
+    height:40px;
 }
 
 
@@ -1467,20 +1553,85 @@ i {
     background-image: url(../images/icon_nav_cell-hover.png);
 }
 
-.line{
-    margin:0px 10px;
-    color:#ddd;
-    display:inline;
-    height:20px;
-    width:1px;
-    border-left:1px solid #ddd;
+.line {
+    margin: 0px 20px;
+    color: #ddd;
+    display: inline;
+    height: 20px;
+    width: 1px;
+    border-left: 1px solid #ddd;
 }
-.right{
-    text-align:right;
+
+.right {
+    text-align: right;
 }
-.pad-ty{
-    padding-right:20px;
+
+.pad-ty {
+    padding-right: 26px;
 }
-.blue{
-    color:#0E3E81;
+
+.blue {
+    color: #0E3E81;
+}
+
+#box {
+    margin-bottom: 109px;
+}
+
+
+.order-con li .order-c {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.order-con li .order-c a {
+    color: #2d2d2d;
+    background: #e6ebf2;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    float: right;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    width: 70px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+
+.order-con .order-c {
+    color: #929292;
+    background:#fafafa;
+}
+
+.order-con .order-c label {
+    color: #0E3E81;
+    text-align: left;
+    padding-left:10px;
+}
+
+// 日历控件
+.toolbar .toolbar-inner {
+    height: 30px;
+}
+.picker-calendar-week-days {
+    height: 30px;
+    padding-top: 5px;
+}
+.picker-calendar-row {
+    height:30px !important;
+}
+.picker-calendar-day.picker-calendar-day-next, .picker-calendar-day.picker-calendar-day-prev {
+    height: 30px;
+}
+.picker-calendar-day {
+    height: 30px;
+}
+.picker-calendar-week-days+.picker-calendar-months {
+    height: 16.9rem;
+}
+.picker-calendar-month {
+    height:177px;
 }

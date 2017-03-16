@@ -22,7 +22,8 @@
 <body ontouchstart class="body-gray">
     <!-- 返回 -->
     <div class="return-last">
-        <img src="../common/images/array.jpg"> 核对订单信息
+      <a href="#"><img src="../common/images/array.jpg"></a> 
+      核对订单信息
     </div>
     <div class="weui-cells add-submit">
         <a class="weui-cell weui-cell_access" href="javascript:;">
@@ -34,53 +35,187 @@
         </a>
     </div>
     <!-- list -->
-    <div class="order submit">
-        <ul>
-            <li>
-                <div class="weui-cells_checkbox">
-                    <div class="order-product">
-                        <img src="../common/images/product/detial1.png">
-                        <p class="title">优质纯牛奶</p>
-                        <p class="content">巴氏杀菌，新鲜原滋味.</p>
-                        <p class="price"><i>¥38</i> /瓶 <strong>合计：</strong><em>￥266</em></p>
+    <div class="order submit" id="submitOrder">
+        <div class="order-list">
+            <ul>
+                <li>
+                    <div class="weui-cells_checkbox">
+                        <div class="order-product">
+                            <img src="../common/images/product/detial1.png">
+                            <p class="title">优质纯牛奶</p>
+                            <p class="content">巴氏杀菌，新鲜原滋味.</p>
+                            <p class="price"><i>¥38</i> /瓶 <strong>合计：</strong><em>￥266</em></p>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <span>订单编号：</span>
-                <label>25645512231456</label>
-            </li>
-            <li class="auto">
-                <span>订单详情：</span>
-                <div class="value">起配 2017-01-11 / 1瓶/天 / 天天送×30天</div>
-            </li>
-        </ul>
-        <ul>
-            <li class="coupon">
-                <span>优惠券</span>
-                <div class="weui-cell weui-cell_select weui-cell_select-after">
-                    <div class="weui-cell__bd">
-                        <select class="weui-select" name="select2">
-                            <option value="1" selected="">无可用</option>
-                            <option value="1">1</option>
-                            <option value="1">2</option>
-                        </select>
+                </li>
+                <li>
+                    <span>订单编号：</span>
+                    <label>25645512231456</label>
+                </li>
+                <li class="auto">
+                    <span>订单详情：</span>
+                    <div class="value">起配 2017-01-11 / 1瓶/天 / 天天送×30天</div>
+                </li>
+            </ul>
+            <ul>
+                <li class="coupon">
+                    <!-- <span>优惠券</span>
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select2">
+                                <option value="1" selected="">无可用</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>优惠券</p>
+                        </div>
+                        <div class="weui-cell__ft">无可用</div>
+                    </a>
+                </li>
+                <li>
+                    <!-- <span>兑换码</span>
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select2">
+                                <option value="1" selected="">无可用</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>兑换码</p>
+                        </div>
+                        <div class="weui-cell__ft">无可用</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="order-list">
+            <ul>
+                <li>
+                    <div class="weui-cells_checkbox">
+                        <div class="order-product">
+                            <img src="../common/images/product/detial1.png">
+                            <p class="title">优质纯牛奶</p>
+                            <p class="content">巴氏杀菌，新鲜原滋味.</p>
+                            <p class="price"><i>¥38</i> /瓶 <strong>合计：</strong><em>￥266</em></p>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <span>兑换码</span>
-                <div class="weui-cell weui-cell_select weui-cell_select-after">
-                    <div class="weui-cell__bd">
-                        <select class="weui-select" name="select2">
-                            <option value="1" selected="">无可用</option>
-                            <option value="1">1</option>
-                            <option value="1">2</option>
-                        </select>
+                </li>
+                <li>
+                    <span>订单编号：</span>
+                    <label>25645512231456</label>
+                </li>
+                <li class="auto">
+                    <span>订单详情：</span>
+                    <div class="value">起配 2017-01-11 / 1瓶/天 / 天天送×30天</div>
+                </li>
+            </ul>
+            <ul>
+                <li class="coupon">
+                    <!-- <span>优惠券</span>
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select2">
+                                <option value="1" selected="">无可用</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>优惠券</p>
+                        </div>
+                        <div class="weui-cell__ft">无可用</div>
+                    </a>
+                </li>
+                <li>
+                    <!-- <span>兑换码</span>
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select2">
+                                <option value="1" selected="">无可用</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>兑换码</p>
+                        </div>
+                        <div class="weui-cell__ft">无可用</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="order-list">
+            <ul>
+                <li>
+                    <div class="weui-cells_checkbox">
+                        <div class="order-product">
+                            <img src="../common/images/product/detial1.png">
+                            <p class="title">优质纯牛奶</p>
+                            <p class="content">巴氏杀菌，新鲜原滋味.</p>
+                            <p class="price"><i>¥38</i> /瓶 <strong>合计：</strong><em>￥266</em></p>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
+                </li>
+                <li>
+                    <span>订单编号：</span>
+                    <label>25645512231456</label>
+                </li>
+                <li class="auto">
+                    <span>订单详情：</span>
+                    <div class="value">起配 2017-01-11 / 1瓶/天 / 天天送×30天</div>
+                </li>
+            </ul>
+            <ul>
+                <li class="coupon">
+                    <!-- <span>优惠券</span>
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select2">
+                                <option value="1" selected="">无可用</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>优惠券</p>
+                        </div>
+                        <div class="weui-cell__ft">无可用</div>
+                    </a>
+                </li>
+                <li>
+                    <!-- <span>兑换码</span>
+                    <div class="weui-cell weui-cell_select weui-cell_select-after">
+                        <div class="weui-cell__bd">
+                            <select class="weui-select" name="select2">
+                                <option value="1" selected="">无可用</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>兑换码</p>
+                        </div>
+                        <div class="weui-cell__ft">无可用</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- 结算 -->
     <div class="order-settle  submit">
