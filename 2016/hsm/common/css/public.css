@@ -55,6 +55,10 @@ i {
     color: #E70313;
 }
 
+.padding-bottom {
+    padding-bottom: 50px;
+}
+
 .red-bg {
     background: #E70313 !important;
     color: #fff;
@@ -100,6 +104,10 @@ i {
 .weui-tabbar {
     background-color: #fff;
     height: 50px;
+    border-top:1px solid #ddd;
+}
+.weui-tabbar:before {
+    border:0;
 }
 
 .swiper-slide img {
@@ -379,6 +387,7 @@ i {
     color: #929292;
     text-align: left;
     padding: 10px 20px;
+    margin-bottom: 50px;
 }
 
 .detail-con .weui-form-preview:before {
@@ -406,6 +415,10 @@ i {
     line-height: 50px;
     text-align: center;
     font-size: 1.6rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .detail-btn .btnShopping {
@@ -428,6 +441,20 @@ i {
     font-size: 1.6rem;
 }
 
+.detail-btn .btn em {
+    background: #fff;
+    min-width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    color: #946134;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    padding: 1px;
+    position: absolute;
+    left: 23%;
+    top: 5px;
+}
+
 .detail {
     overflow: auto;
     position: relative;
@@ -436,8 +463,13 @@ i {
 
 /*dialog*/
 
-.dialog-wrap {
+.dialog-wrap {    
     display: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index:2;
 }
 
 .cart-bg {
@@ -464,17 +496,29 @@ i {
 }
 
 .cart-dialog .order-product img {
-    float: left;
+    /*float: left;
     width: 9rem;
     height: 9.4rem;
     margin-top: -50px;
     margin-right: 1rem;
     border-radius: 10px;
-    margin-left: 5%;
+    margin-left: 5%;*/
+    position: absolute;
+    width: 9rem;
+    height: 9.4rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    left: 3%;
+    top:-33px;
+
 }
 
 .cart-dialog .order ul li:first-child {
     height: 7rem;
+    padding-left: 127px;
+}
+.cart-dialog .order ul li:first-child p {
+    line-height: 2rem;
 }
 
 
@@ -498,7 +542,7 @@ i {
 }
 
 #submitOrder {
-    margin-bottom: 107px;
+    padding-bottom: 107px;
 }
 
 .order ul {
@@ -537,6 +581,7 @@ i {
 
 .order ul li:first-child {
     height: 11.5rem;
+    overflow: auto;
 }
 
 .order .weui-check__label {
@@ -653,6 +698,11 @@ i {
     display: inline-block;
 }
 
+.order-edit ul li .edit a.minu {
+    font-size: 21px;
+    vertical-align: middle;
+}
+
 .order-edit .weui-select {
     direction: rtl;
     color: #929292
@@ -750,8 +800,8 @@ i {
 
 .add-submit {
     font-size: 1.4rem;
-    height: 50px;
-    line-height: 32px;
+    min-height: 40px;
+    line-height: 20px;
     margin-top: 6px;
 }
 
@@ -780,6 +830,11 @@ i {
     width: 69%;
     display: inline-block;
     float: left;
+}
+
+.order.submit ul li .value i {
+    font-size: 12px;
+    margin-left: 2px;
 }
 
 .order.submit ul li.auto {
@@ -830,9 +885,9 @@ i {
     width: 95%;
     border-radius: 4px;
     border: 0;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 5%;
+    height: 20px;
+    line-height: 20px;
+    padding:5px 5px 5px 5%;
 }
 
 .code .blue-bg {
@@ -1101,6 +1156,7 @@ i {
 .address-con {
     color: #929292;
     font-size: 1.4rem;
+    padding-bottom: 50px;
 }
 
 .address-con a {
@@ -1260,11 +1316,12 @@ i {
 .order-con ul li.order-gray {
     background: #F4F4F4;
     min-height: 113px;
-    height:auto;
-    border-bottom:1px solid #e1e1e1;
+    height: auto;
+    border-bottom: 1px solid #e1e1e1;
 }
-.order-con ul li.order-gray .weui-cells_checkbox{
-    overflow:auto;
+
+.order-con ul li.order-gray .weui-cells_checkbox {
+    overflow: auto;
 }
 
 .order-con .order-product {
@@ -1373,7 +1430,7 @@ i {
 
 .order ul li.order-f {
     line-height: 40px;
-    height:40px;
+    height: 40px;
 }
 
 
@@ -1507,7 +1564,7 @@ i {
 }
 
 .bind .weui-cell__bd input[type='tel'] {
-    border-bottom: 1px solid #979797;
+    border-bottom: 1px solid #d9d9d9;
     width: 90%;
 }
 
@@ -1575,9 +1632,8 @@ i {
 }
 
 #box {
-    margin-bottom: 109px;
+    padding-bottom: 14rem;
 }
-
 
 .order-con li .order-c {
     height: 40px;
@@ -1603,80 +1659,160 @@ i {
 
 .order-con .order-c {
     color: #929292;
-    background:#fafafa;
+    background: #fafafa;
 }
 
 .order-con .order-c label {
     color: #0E3E81;
     text-align: left;
-    padding-left:10px;
+    padding-left: 10px;
 }
 
-// 日历控件
-/*.toolbar .toolbar-inner {
-    height: 30px;
-}
-.picker-calendar-week-days {
-    height: 30px;
-    padding-top: 5px;
-}
-.picker-calendar-row {
-    height:30px !important;
-}
-.picker-calendar-day.picker-calendar-day-next, .picker-calendar-day.picker-calendar-day-prev {
-    height: 30px;
-}
-.picker-calendar-day {
-    height: 30px;
-}
-.picker-calendar-week-days+.picker-calendar-months {
-    height: 16.9rem;
-}
-.picker-calendar-month {
-    height:177px;
-}*/
 .picker-calendar-week-days {
     height: 40px;
     padding-top: 5px;
 }
+
 .picker-calendar-row {
-    height:40px !important;
+    height: 40px !important;
 }
+
 .weui-picker-calendar {
     height: 290px;
 }
+
 .weui-picker-calendar .picker-modal-inner {
     height: 300px;
 }
+
 .picker-calendar-week-days+.picker-calendar-months {
     height: 227px;
 }
-.picker-calendar-months-wrapper { 
-    height: 300px; 
+
+.picker-calendar-months-wrapper {
+    height: 300px;
 }
+
 .picker-calendar-month {
     height: 222px;
 }
-.picker-calendar-month-picker .current-month-value, .picker-calendar-month-picker .current-year-value, .picker-calendar-year-picker .current-month-value, .picker-calendar-year-picker .current-year-value {
+
+.picker-calendar-month-picker .current-month-value,
+.picker-calendar-month-picker .current-year-value,
+.picker-calendar-year-picker .current-month-value,
+.picker-calendar-year-picker .current-year-value {
     height: 40px;
     font-size: 1.4rem;
     line-height: 40px;
 }
-.picker-calendar-month-picker a.icon-only, .picker-calendar-year-picker a.icon-only {
+
+.picker-calendar-month-picker a.icon-only,
+.picker-calendar-year-picker a.icon-only {
     height: 40px;
     line-height: 40px;
     font-size: 1.4rem;
 }
-.picker-calendar-week-days .picker-calendar-week-day { 
-    line-height: 25px; 
+
+.picker-calendar-week-days .picker-calendar-week-day {
+    line-height: 25px;
     font-size: 1.4rem;
 }
-.picker-calendar-month-picker, .picker-calendar-year-picker {
+
+.picker-calendar-month-picker,
+.picker-calendar-year-picker {
     line-height: 35px !important;
 }
+
 .toolbar .toolbar-inner {
     height: 35px !important;
 }
+
 .picker-calendar-week-days {
     height: 30px;
 }
+
+
+/*底部导航*/
+
+.tabbar {
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    z-index: 500;
+    bottom: 0;
+    width: 100%;
+    border-top:1px solid #ddd;
+}
+
+.tabbar a {
+    display: block;
+    flex: 1;
+    padding: 5px 0 0;
+    font-size: 1.2rem;
+    padding-top: 26px;
+    color: #999;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center 3px;
+}
+
+.tabbar a.active {
+    color: #0e3e81;
+}
+
+.tabbar a.icon1.active {
+    background-image: url(../images/icon_nav_button-hover.png);
+}
+
+.tabbar a.icon2.active {
+    background-image: url(../images/icon_nav_msg-hover.png);
+}
+
+.tabbar a.icon3.active {
+    background-image: url(../images/icon_nav_article-hover.png);
+}
+
+.tabbar a.icon4.active {
+    background-image: url(../images/icon_nav_cell-hover.png);
+}
+
+
+/*------------------------------- noData.html -------------------------------*/
+
+.order-none {
+    padding-top: 250px;
+    background: url(../images/pic.png) no-repeat center center;
+    background-size: 11rem;
+    font-size: 1.4rem;
+    color: #7B7B7B;
+    text-align: center;
+}
+
+.order-none a.weui-btn {
+    margin-top: 50px;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.weui-btn_primary {
+    background: #3190E8;
+}
+.order.submit.order-con{
+    margin-bottom: 60px;
+    overflow: auto;
+}
+.address-form select{
+    height:24px;
+    line-height:24px;
+    padding-left: 0;
+}
+
+
+
+
