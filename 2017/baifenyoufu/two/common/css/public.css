@@ -168,18 +168,18 @@ i {
 }
 
 .swiper-pagination-bullet {
-    width: 5px;
-    height: 5px;
-    background: #ccc;
+    width: 6px;
+    height: 6px;
+    background: #C5C5C5;
     opacity: 1;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: #0e3e81;
+    background: #3190E8;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 2px;
+    margin: 0 3px;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets,
@@ -594,6 +594,10 @@ a.icon-reply.active {
     margin-right: 15px;
 }
 
+.sug-del {
+    margin-top: 0;
+}
+
 .sug-del .weui-cell__bd label {
     line-height: 24px;
 }
@@ -612,6 +616,58 @@ a.icon-reply.active {
 .sug-del .weui-cell:nth-child(4n):before,
 .sug-del .weui-cell:nth-child(6n):before {
     border: 0;
+}
+
+.sug-del .pic {
+    padding-right: 0;
+}
+
+.sug-del .pic img {
+    float: left;
+    margin: 0px 2.7% 2.7% 0;
+    width: 21.8%;
+    height: 21.8%;
+}
+
+.sug-upload .sug-img {
+    float: left;
+    margin: 0px 2.7% 2.7% 0;
+    width: 21.8%;
+    height: 21.8%;
+    position: relative;
+}
+
+.sug-upload .sug-img .upload-img {
+    width: 100%;
+    height: 21.8%;
+}
+
+.sug-upload .sug-img .close {
+    width: 20px;
+    position: absolute;
+    right: -3px;
+    top: -5px;
+    z-index: 5;
+}
+
+.sug-upload .upload {
+    color: #B6B6B6;
+    float: left;
+    margin: 0px 2.7% 2.7% 0;
+    width: 21.7%;
+    padding-top: 21.7%;
+    display: inline-block;
+    border: 1px dashed #B6B6B6;
+    text-align: center;
+    position: relative;
+    background: url(../images/icon/cam.png) no-repeat center 30%;
+    background-size: 30px;
+}
+
+.sug-upload .upload p {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
 }
 
 
@@ -665,13 +721,18 @@ a.icon-reply.active {
 
 .tea .tea-left li {
     border-bottom: 1px solid #fff;
-    border-left: 4px solid #eee;
     background: #EEEEEE;
+    height: 50px;
+    line-height: 50px;
 }
 
 .tea .tea-left li.active {
-    border-left: 4px solid #3190E8;
-    background: #fff;
+    background: #3190E8;
+    color: #fff;
+}
+
+.tea .tea-left li.active a {
+    color: #fff;
 }
 
 .tea .tea-left a {
@@ -687,10 +748,11 @@ a.icon-reply.active {
 
 .tea .tea-right ul li {
     float: left;
-    width: 47%;
+    width: 46.5%;
     text-align: center;
     margin-bottom: 10px;
     position: relative;
+    border: 1px solid #F0F0F0;
 }
 
 .tea .tea-right ul li:nth-child(2n) {
@@ -719,6 +781,10 @@ a.icon-reply.active {
     margin-bottom: 5px;
 }
 
+.tea .tea-right ul li.already a {
+    background: #ddd;
+}
+
 .tea .tea-right ul li a i {
     display: inline-block;
     width: 20px;
@@ -730,7 +796,6 @@ a.icon-reply.active {
 }
 
 .tea .tea-right ul li .wrap {
-    border: 1px solid #F0F0F0;
     border-top: 0;
     padding: 5%;
     margin-top: -6px;
@@ -934,6 +999,22 @@ a.icon-reply.active {
 
 /*------------------------------- gymIndex.html -------------------------------*/
 
+.gym-address {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 22;
+    opacity: 0.3;
+    border-radius: 100px;
+    height: 26px;
+    padding: 0 10px 0 26px;
+    width: 90px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background: #000000 url(../images/icon/add.png) no-repeat 5px center;
+    background-size: 21px;
+}
+
 .gym-type {
     height: 44px;
     line-height: 44px;
@@ -958,6 +1039,16 @@ a.icon-reply.active {
     border-left: 2px solid #3190E8;
     line-height: 20px;
     margin: 5px 0;
+    position: relative;
+}
+
+.gym-title a {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    padding: 12px;
+    background: url(../images/icon/maue.png) no-repeat;
+    background-size: 24px;
 }
 
 .gym-index-list {
@@ -1157,7 +1248,50 @@ a.icon-reply.active {
     border: 1px solid #3190E8;
     color: #3190E8
 }
+.eval-bg{
+    background: rgba(0,0,0,0.60);
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    display:none;
+}
+.eval-mmpt{
+    display:none;
+    position: absolute;
+    left:10%;
+    top:27%;
+    width:80%;
+    background:#fff;
+    border-radius:10px;
+}
+.eval-mmpt .wrap{
+    padding:20px;
 
+}
+.eval-mmpt h1{
+    font-size: 1.6rem;
+    color: #333333;
+    text-align:center;
+}
+.eval-mmpt .weui-cell {
+    padding: 10px 0px;
+}
+.eval-mmpt .weui-cell:before{
+    left:0;
+}
+.eval-mmpt a.confirm{
+    background: #3190E8;
+    border-radius: 0 0 6px 6px;
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    font-size: 1.6rem;
+}
 
 /*------------------------------- mmpt.html -------------------------------*/
 
@@ -1233,6 +1367,48 @@ a.icon-reply.active {
 
 .mmtp-success .tip {
     border: 0;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.mmtp-success .tip p .fail {
+    color: #F47C7C;
+}
+
+.mmtp-success .tip p .succ {
+    color: #65ACEE;
+}
+
+.mmtp-success p a {
+    margin-top: 100px;
+    opacity: 0.74;
+    border-radius: 6px;
+    width: 90%;
+    line-height: 30px;
+    font-size: 1.4rem;
+}
+
+.mmtp-success p a.weui-btn_primary {
+    background: #3190E8;
+    border: 1px solid #3190E8;
+}
+
+.mmtp-success p a.weui-btn_plain-primary {
+    border: 1px solid #3190E8;
+    color: #3190E8
+}
+
+.mmpt-return {
+    text-align: center;
+}
+
+p.mmpt-return a {
+    width: 120px;
+    display: inline-block;
+}
+
+p.mmpt-return a:first-child {
+    margin-right: 5%;
 }
 
 
@@ -1298,8 +1474,9 @@ a.icon-reply.active {
     margin-bottom: 10px;
     padding-left: 10px;
 }
+
 .mmpt-on-con .up input {
-    background:none;
+    background: none;
 }
 
 .mmpt-on-btn {
@@ -1313,7 +1490,7 @@ a.icon-reply.active {
     background-size: 25px;
 }
 
-.mmpt-on-con  input {
+.mmpt-on-con input {
     background: url(../images/icon/down_blue.png) no-repeat 97% center;
     background-size: 24px;
 }
@@ -1324,20 +1501,191 @@ a.icon-reply.active {
 
 
 /*------------------------------- physiotherapy.html -------------------------------*/
-.mmpt-on-con.phy p{
-    margin-top:0;
+
+.mmpt-on-con.phy p {
+    margin-top: 0;
 }
-.phy{
-    background:#fff;
-    margin-bottom:7px;
+
+.phy {
+    background: #fff;
+    margin-bottom: 7px;
 }
 
 .mmpt-on-con .project p {
     background: url(../images/icon/project_icon.png) no-repeat left center;
     background-size: 25px;
 }
+
 .mmpt-on-con .address p {
     background: url(../images/icon/address_icon.png) no-repeat left center;
     background-size: 25px;
 }
 
+
+/* 日历控件*/
+
+.picker-calendar-week-days {
+    height: 40px;
+    padding-top: 5px;
+}
+
+.picker-calendar-row {
+    height: 40px !important;
+}
+
+.weui-picker-calendar {
+    height: 290px;
+}
+
+.weui-picker-calendar .picker-modal-inner {
+    height: 300px;
+}
+
+.picker-calendar-week-days+.picker-calendar-months {
+    height: 227px;
+}
+
+.picker-calendar-months-wrapper {
+    height: 300px;
+}
+
+.picker-calendar-month {
+    height: 222px;
+}
+
+.picker-calendar-month-picker .current-month-value,
+.picker-calendar-month-picker .current-year-value,
+.picker-calendar-year-picker .current-month-value,
+.picker-calendar-year-picker .current-year-value {
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.picker-calendar-month-picker a.icon-only,
+.picker-calendar-year-picker a.icon-only {
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.4rem;
+}
+
+.picker-calendar-week-days .picker-calendar-week-day {
+    line-height: 25px;
+    font-size: 1.4rem;
+}
+
+.picker-calendar-month-picker,
+.picker-calendar-year-picker {
+    line-height: 35px !important;
+}
+
+.toolbar .toolbar-inner {
+    height: 35px !important;
+}
+
+.picker-calendar-week-days {
+    height: 30px;
+}
+
+
+/*------------------------------- teaRoomGuide.html -------------------------------*/
+
+.tea-guide {
+    background: url(../images/icon/teabg.png) no-repeat center 5%;
+    background-size: 100%;
+}
+
+.mmpt.rtx {
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+/*------------------------------- appointmentStatus.html -------------------------------*/
+
+.appo-tab {
+    width: 60%;
+    margin: 3% auto;
+    border: 1px solid #3190E8;
+    border-radius: 4px;
+    height: 34px;
+    line-height: 32px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.appo-tab span {
+    width: 50%;
+}
+
+.appo-tab .active {
+    background: #3190E8;
+    border-radius: 4px 0 0 4px;
+    margin: 1px;
+    color: #fff;
+}
+
+.appo-tab span.active:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.appo-status li {
+    padding: 0 3% 3%;
+    background: #fff;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    color: #B6B6B6;
+}
+
+.appo-status li h1 {
+    height: 40px;
+    line-height: 40px;
+    overflow: auto;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.appo-status li h1 span {
+    float: left;
+}
+
+.appo-status li h1 em {
+    float: right;
+}
+
+.appo-status li dl {
+    padding-top: 10px;
+}
+
+.appo-status li dd {
+    display: flex;
+    text-align: left;
+    line-height: 25px;
+}
+
+.appo-status li dd span {
+    width: 25%;
+    display: inline-block;
+}
+
+.appo-status li dd label {
+    color: #151515;
+    text-align: left;
+    display: inline-block;
+    width: 75%;
+}
+
+.appo-status li.blue h1 em {
+    color: #3190E8;
+}
+
+.select-test {
+    width: 150px;
+    background: url(../images/icon/down.png) no-repeat right center;
+    background-size: 27px;
+    text-align: center;
+    padding-right: 30px;
+}

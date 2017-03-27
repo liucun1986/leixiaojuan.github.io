@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="email=no" />
-    <title>北极熊</title>
+    <title>心理测评</title>
     <link rel="stylesheet" href="../Plugin/JqueryWeUI/lib/weui.min.css" />
     <link rel="stylesheet" href="../Plugin/JqueryWeUI/css/jquery-weui.min.css" />
     <link rel="stylesheet" href="../common/css/public.css" />
@@ -20,9 +20,8 @@
 
 <body ontouchstart class="body-gray">
     <!-- 返回 -->
-    <div class="return-last">
-        <a href="javascript:history.go(-1)"><img src="../common/images/icon/back_icon.png"></a>
-        心理测评
+    <div class="return-last text-center">
+        <input class="weui-input select-test" id="name" type="text" value="腾讯九型人格测试">
     </div>
     <div class="mmpt">
         <div class="tip">
@@ -119,11 +118,31 @@
             </li>
         </ul>
         <p class="mmpt-btn">
-            <a href="javascript:void(0)" class="weui-btn weui-btn-auto weui-btn_primary">
+            <!-- 提交成功跳转 -->
+            <a href="mmptSuccess.html" class="weui-btn weui-btn-auto weui-btn_primary">
                 提交
             </a>
+            <!-- 提交失败跳转 -->
+            <!-- <a href="mmptFail.html" class="weui-btn weui-btn-auto weui-btn_primary">
+                提交
+            </a> -->
         </p>
     </div>
+    <script type="text/javascript">
+    $("#name").select({
+        title: "",
+        items: [{
+            title: "职业价值观测试",
+            value: 1
+        }, {
+            title: "腾讯九型人格测试",
+            value: 3
+        }, {
+            title: "DISC测试",
+            value: 4
+        }]
+    });
+    </script>
 </body>
 
 </html>

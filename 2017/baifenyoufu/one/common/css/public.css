@@ -1482,7 +1482,7 @@ i {
 .shopping .confirm-btn .weui-cells {
     width: 65%;
     float: left;
-    height: 50px;
+    height: 52px;
     line-height: 50px;
 }
 
@@ -1596,26 +1596,29 @@ i {
     background-size: 20px;
     padding-right: 35px;
 }
-.order-tip{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    z-index:999;
-    width:5.5rem;
-    height:5.5rem;
+
+.order-tip {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    width: 5.5rem;
+    height: 5.5rem;
     background: url(../images/icon/chat_01.png) no-repeat center center;
-    background-size:100%;
+    background-size: 100%;
 }
-.order-tip.active{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    z-index:999;
-    width:5.5rem;
-    height:5.5rem;
+
+.order-tip.active {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    width: 5.5rem;
+    height: 5.5rem;
     background: url(../images/icon/chat.png) no-repeat center center;
-    background-size:100%;
+    background-size: 100%;
 }
+
 
 /*------------------------------- orderBusinessSuccess.html -------------------------------*/
 
@@ -1627,4 +1630,134 @@ i {
 
 .order-detail.success .weui-cell__bd {
     color: #333333;
+}
+
+.order-none {
+    padding-top:250px;
+    background:url(../images/icon/pic.png) no-repeat center center;
+    background-size:11rem;
+    font-size: 1.4rem;
+    color: #7B7B7B;
+    text-align:center;
+}
+.order-none a.weui-btn{
+    margin-top:50px;
+    height:35px;
+    line-height:35px;
+    width:150px;
+    border-radius:5px;
+    display:inline-block;
+}
+
+/*日历控件*/
+.picker-calendar-week-days {
+    height: 40px;
+    padding-top: 5px;
+}
+.picker-calendar-row {
+    height:40px !important;
+}
+.weui-picker-calendar {
+    height: 290px;
+}
+.weui-picker-calendar .picker-modal-inner {
+    height: 300px;
+}
+.picker-calendar-week-days+.picker-calendar-months {
+    height: 227px;
+}
+.picker-calendar-months-wrapper { 
+    height: 300px; 
+}
+.picker-calendar-month {
+    height: 222px;
+}
+.picker-calendar-month-picker .current-month-value, .picker-calendar-month-picker .current-year-value, .picker-calendar-year-picker .current-month-value, .picker-calendar-year-picker .current-year-value {
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+.picker-calendar-month-picker a.icon-only, .picker-calendar-year-picker a.icon-only {
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.4rem;
+}
+.picker-calendar-week-days .picker-calendar-week-day { 
+    line-height: 25px; 
+    font-size: 1.4rem;
+}
+.picker-calendar-month-picker, .picker-calendar-year-picker {
+    line-height: 35px !important;
+}
+.toolbar .toolbar-inner {
+    height: 35px !important;
+}
+.picker-calendar-week-days {
+    height: 30px;
+}
+
+/*------------------------------- login.html -------------------------------*/
+.body-login{
+    background: #E9F7FF url(../images/icon/bg.png) 0 bottom no-repeat;
+    background-size:100%;
+    overflow:hidden;
+}
+.login{
+    width:80%;
+    margin:15% auto 0px auto;
+}
+.login h1{
+    font-size: 2rem;
+    color:#3190E8;
+    text-align:center;
+    margin-bottom:20%; 
+
+}
+.login li{
+    padding-left:35px;
+    background-repeat:no-repeat;
+    background-size:30px;
+    padding-bottom: 15px;
+}
+.login li:first-child{
+    background-image:url(../images/icon/login_icon_user.png);
+}
+.login li:last-child{
+    background-image:url(../images/icon/login_icon_password.png);
+}
+.login li input{
+    background:none;
+    height:30px;
+    line-height:30px;
+    box-shadow:none;
+    border:0;
+    border-bottom:1px solid #E5E5E5;
+    width:100%;
+    outline:none;
+    font-size:1.4rem;
+}
+.login .btn{
+
+    margin-top:40px;
+    background: #3190E8;
+    border-radius: 71px;
+    display:inline-block;
+    width:100%;
+    height: 44px;
+    line-height:44px;
+    text-align:center;
+    color:#fff;
+    font-size:1.6rem;
+    letter-spacing:5px;
+}
+.remember{
+    text-align:right;
+}
+.remember input{
+    border: 1px solid #ddd;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    border-radius:0;
+    -webkit-box-shadow: none;
 }

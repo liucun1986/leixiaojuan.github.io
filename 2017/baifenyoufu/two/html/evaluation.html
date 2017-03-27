@@ -21,10 +21,58 @@
 <body ontouchstart>
     <div class="eval">
         <p>
-            <a href="mmpt.html" class="weui-btn weui-btn_primary">我要测评</a>
+            <a href="javascript:void(0)" id="evaluation" class="weui-btn weui-btn_primary">我要测评</a>
             <a href="evaluation.html" class="weui-btn weui-btn_plain-primary">我要预约</a>
         </p>
     </div>
+    <div class="eval-bg"></div>
+    <div class="eval-mmpt">
+        <div class="wrap">
+            <h1>请选测试题目类型</h1>
+            <div class="weui-cells weui-cells_checkbox">
+                <label class="weui-cell weui-check__label" for="s11">
+                    <div class="weui-cell__bd">
+                        <p>职业价值观测试</p>
+                    </div>
+                    <div class="weui-cell__hd">
+                        <input type="radio" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label" for="s12">
+                    <div class="weui-cell__bd">
+                        <p>腾讯九型人格测试</p>
+                    </div>
+                    <div class="weui-cell__hd">
+                        <input type="radio" class="weui-check" name="checkbox1" id="s12" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label" for="s13">
+                    <div class="weui-cell__bd">
+                        <p>DISC测试</p>
+                    </div>
+                    <div class="weui-cell__hd">
+                        <input type="radio" class="weui-check" name="checkbox1" id="s13" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <a href="mmpt.html" class="confirm">确认</a>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            $("#evaluation").click(function(){
+                $(".eval-bg").show();
+                $(".eval-mmpt").show();
+            });
+            $(".eval-bg").click(function(){
+                $(".eval-bg").hide();
+                $(".eval-mmpt").hide();
+            });
+        });
+    </script>
 </body>
 
 </html>

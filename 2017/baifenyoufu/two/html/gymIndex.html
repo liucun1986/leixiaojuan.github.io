@@ -19,9 +19,23 @@
 </head>
 
 <body ontouchstart class="body-gray">
-    <h1 class="gym-type">
-        <input class="weui-input" id="name" type="text" value="希格玛健身房">        
-    </h1>
+    <input class="weui-input gym-address" id="name" type="text" value="切换健身房地址">
+    <!-- 滚动 -->
+    <div class="swiper-container detail">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../common/images/product/q.png" /></div>
+            <div class="swiper-slide"><img src="../common/images/product/q.png" /></div>
+            <div class="swiper-slide"><img src="../common/images/product/q.png" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script>
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+    });
+    </script>
+
     <div class="gym-wrap">
         <h1 class="gym-title">健身房监控</h1>
         <ul class="gym-index-list">
@@ -47,7 +61,9 @@
         <a href="videoList.html" class="view-all">查看全部</a>
     </div>
     <div class="gym-wrap p-r-no">
-        <h1 class="gym-title">课程列表</h1>
+        <h1 class="gym-title">课程列表
+            <a href="courseList.html"></a>
+        </h1>
         <ul class="gym-course">
             <li>
                 <img src="../common/images/product/pic1.jpg" class="pic">
@@ -81,14 +97,14 @@
     $("#name").select({
         title: "",
         items: [{
-            title: "希格玛健身房",
+            title: "希格玛健身中心",
             value: 1
         }, {
-            title: "希格玛健身房1",
+            title: "第三级健身中心",
             value: 3
-        }, {
-            title: "希格玛健身房2",
-            value: 4
+        },{
+            title: "切换健身房地址",
+            value: 3            
         }]
     });
     </script>
