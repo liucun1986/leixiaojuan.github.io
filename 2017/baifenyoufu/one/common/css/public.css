@@ -777,6 +777,8 @@ i {
     bottom: 0;
     left: 0;
     width: 100%;
+    overflow:hidden;
+    height: 52px;
 }
 
 .confirm-btn .btn {
@@ -1239,6 +1241,7 @@ i {
 
 .button_sp_area.btn-pay {
     text-align: center;
+    padding-bottom:20px;
 }
 
 .button_sp_area.btn-pay a {
@@ -1445,6 +1448,8 @@ i {
     height: 22px;
     line-height: 22px;
     font-size: 2rem;
+    border:0;
+    text-align:center;
 }
 
 .shopping .cart-num input[type="number"] {
@@ -1737,14 +1742,13 @@ i {
     font-size:1.4rem;
 }
 .login .btn{
-
-    margin-top:40px;
+    margin-top:3rem;
     background: #3190E8;
     border-radius: 71px;
     display:inline-block;
     width:100%;
-    height: 44px;
-    line-height:44px;
+    height: 40px;
+    line-height:40px;
     text-align:center;
     color:#fff;
     font-size:1.6rem;
@@ -1752,6 +1756,7 @@ i {
 }
 .remember{
     text-align:right;
+    font-size:1.4rem;
 }
 .remember input{
     border: 1px solid #ddd;

@@ -549,7 +549,7 @@ a.icon-reply.active {
 }
 
 .sug-cells {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .sug-cells .weui-label {
@@ -563,7 +563,9 @@ a.icon-reply.active {
 .sug-cells .weui-cell {
     align-items: flex-start;
 }
-
+.sug p .weui-btn{
+    margin-bottom: 2rem;
+}
 
 /*------------------------------- suggestionDetail.html -------------------------------*/
 
@@ -639,7 +641,7 @@ a.icon-reply.active {
 
 .sug-upload .sug-img .upload-img {
     width: 100%;
-    height: 21.8%;
+    height: 6.4rem;
 }
 
 .sug-upload .sug-img .close {
@@ -753,6 +755,7 @@ a.icon-reply.active {
     margin-bottom: 10px;
     position: relative;
     border: 1px solid #F0F0F0;
+    border-radius: 5px 5px 0 0;
 }
 
 .tea .tea-right ul li:nth-child(2n) {
@@ -779,6 +782,7 @@ a.icon-reply.active {
     color: #fff;
     width: 100%;
     margin-bottom: 5px;
+    font-size:1.2rem;
 }
 
 .tea .tea-right ul li.already a {
@@ -1144,7 +1148,7 @@ a.icon-reply.active {
     position: absolute;
     right: 0;
     top: 0;
-    width: 60px;
+    width: 4rem;
     z-index: 99;
 }
 
@@ -1688,4 +1692,8 @@ p.mmpt-return a:first-child {
     background-size: 27px;
     text-align: center;
     padding-right: 30px;
+}
+
+#goodsBox{
+    overflow:auto;
 }
