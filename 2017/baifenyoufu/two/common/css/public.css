@@ -563,9 +563,11 @@ a.icon-reply.active {
 .sug-cells .weui-cell {
     align-items: flex-start;
 }
-.sug p .weui-btn{
+
+.sug p .weui-btn {
     margin-bottom: 2rem;
 }
+
 
 /*------------------------------- suggestionDetail.html -------------------------------*/
 
@@ -628,14 +630,14 @@ a.icon-reply.active {
     float: left;
     margin: 0px 2.7% 2.7% 0;
     width: 21.8%;
-    height: 21.8%;
+    height: 6.4rem;
 }
 
 .sug-upload .sug-img {
     float: left;
     margin: 0px 2.7% 2.7% 0;
     width: 21.8%;
-    height: 21.8%;
+    height: 6.4rem;
     position: relative;
 }
 
@@ -657,7 +659,7 @@ a.icon-reply.active {
     float: left;
     margin: 0px 2.7% 2.7% 0;
     width: 21.7%;
-    padding-top: 21.7%;
+    padding-top: 6.4rem;
     display: inline-block;
     border: 1px dashed #B6B6B6;
     text-align: center;
@@ -782,7 +784,7 @@ a.icon-reply.active {
     color: #fff;
     width: 100%;
     margin-bottom: 5px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
 .tea .tea-right ul li.already a {
@@ -1252,50 +1254,57 @@ a.icon-reply.active {
     border: 1px solid #3190E8;
     color: #3190E8
 }
-.eval-bg{
-    background: rgba(0,0,0,0.60);
-    width:100%;
-    height:100%;
-    position: absolute;
-    left:0;
-    top:0;
-    display:none;
-}
-.eval-mmpt{
-    display:none;
-    position: absolute;
-    left:10%;
-    top:27%;
-    width:80%;
-    background:#fff;
-    border-radius:10px;
-}
-.eval-mmpt .wrap{
-    padding:20px;
 
+.eval-bg {
+    background: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
 }
-.eval-mmpt h1{
+
+.eval-mmpt {
+    display: none;
+    position: absolute;
+    left: 10%;
+    top: 27%;
+    width: 80%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.eval-mmpt .wrap {
+    padding: 20px;
+}
+
+.eval-mmpt h1 {
     font-size: 1.6rem;
     color: #333333;
-    text-align:center;
+    text-align: center;
 }
+
 .eval-mmpt .weui-cell {
     padding: 10px 0px;
 }
-.eval-mmpt .weui-cell:before{
-    left:0;
+
+.eval-mmpt .weui-cell:before {
+    left: 0;
 }
-.eval-mmpt a.confirm{
+
+.eval-mmpt a.confirm {
     background: #3190E8;
     border-radius: 0 0 6px 6px;
-    display:inline-block;
-    height:40px;
-    line-height:40px;
-    width:100%;
-    text-align:center;
-    color:#fff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
     font-size: 1.6rem;
 }
+
 
 /*------------------------------- mmpt.html -------------------------------*/
 
@@ -1694,6 +1703,23 @@ p.mmpt-return a:first-child {
     padding-right: 30px;
 }
 
-#goodsBox{
-    overflow:auto;
+#goodsBox {
+    overflow: auto;
+}
+
+.weui-picker-modal .picker-item {
+    font-size: 1.4rem;
+}
+
+.weui-picker-modal .picker-item {
+    height: 40px;
+    line-height: 40px;
+}
+
+.weui-picker-modal .picker-items {
+    font-size: 1.4rem;
+}
+
+.weui-picker-modal .picker-modal-inner {
+    height: 11rem;
 }
