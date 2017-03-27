@@ -1768,3 +1768,9 @@ i {
     border-radius:0;
     -webkit-box-shadow: none;
 }
+.weui-btn_default{
+    border:1px solid #ddd;
+}
+.weui-btn_default:after{
+    border:0;
+}
