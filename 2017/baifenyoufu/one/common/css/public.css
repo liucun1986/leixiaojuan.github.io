@@ -1769,8 +1769,8 @@ i {
     -webkit-box-shadow: none;
 }
 .weui-btn_default{
-    border:1px solid #ddd;
+    border:1px solid #ddd !important;
 }
 .weui-btn_default:after{
-    border:0;
+    border:0 !important;
 }
