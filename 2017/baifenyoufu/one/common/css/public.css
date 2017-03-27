@@ -325,6 +325,7 @@ i {
     line-height: 28px;
     padding: 0 10px 0 10px;
     color: #B6B6B6;
+    font-size:1.4rem;
 }
 
 .tab-con-wrap dl span i {
@@ -389,6 +390,7 @@ i {
     margin-bottom: 10px;
     border: 1px solid #F7F7F7;
     margin-right: 5.5%;
+    font-size:1.4rem;
 }
 
 .home-tab-con .tab-type span.active {
