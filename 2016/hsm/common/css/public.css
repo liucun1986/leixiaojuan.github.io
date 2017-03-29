@@ -1814,5 +1814,49 @@ i {
 }
 
 
+/*------------------------------- orderDetailPay.html -------------------------------*/
+.order-detail .address-con {
+    padding-bottom:0;
+}
+.order-detail .address-con h1 a{
+    float:right;
+    color:#929292;
+    font-weight:normal;
+}
+.order-detail .order-settle{
+    bottom:0;
+}
+.order-detail .other i{
+    float:right;
+}
 
+.order-detail .other .price{
+    width:97%;
+    font-size:1.4rem;
+}
+.order-detail .other .price em{
+    font-size:1.4rem;
+}
 
+.order-detail .order-detail-li{
+    border-top:5px solid #F4F4F4;
+}
+.order-detail .order-detail-li label{
+    text-align:right;
+}
+.order-detail .red{
+    color: #E91524;
+    padding-left:8px;
+}
+.order-detail .font{
+    font-size:1.2rem; 
+    height: 30px;
+    line-height: 30px;
+    border-bottom:0;
+}
+.order-detail .min{
+    font-size:1.2rem;
+    border:0;
+        height: 30px;
+    line-height: 30px;
+}
