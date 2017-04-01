@@ -4,7 +4,5 @@ $(function() {
         $(this).siblings().removeClass('active').end().addClass('active');
         $(".sug"+index).siblings().hide().end().show();
     });
-    
-
 
 });
